@@ -29,24 +29,50 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex justify-center mb-12 text-black items-center z-50 flex-wrap bg-green-100">
-      <header className={`${font2.className} w-screen fixed shadow-xl shadow-customCyan-light z-50 bg-darkGrey bg-opacity-90  top-0 flex-wrap p-7 text-black`}>
-        <nav className="flex items-center justify-between px-8">
-        <Link href="/"><div className="flex items-center">
-            <p>DB CLONE</p>
-            {/* <img src="/white-logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14 fixed" /> */}
-          </div></Link>
+    <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
+      <header
+        className={`${font2.className} w-screen bg-darkGrey bg-opacity-90 py-4 text-black`}
+      >
+        <nav className="flex items-center justify-between h-full px-8">
+          <Link href="/">
+            <div className="flex items-center">
+              <p>DB CLONE</p>
+              {/* <img src="/white-logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14" /> */}
+            </div>
+          </Link>
 
           {/* Hamburger icon for mobile */}
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-black focus:outline-none">
               {isOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               )}
             </button>
@@ -69,8 +95,19 @@ const Nav = () => {
 
                 <div className="absolute top-0 right-0 p-4">
                   <button onClick={toggleMenu} className="text-black focus:outline-none">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
                 </div>
@@ -80,12 +117,18 @@ const Nav = () => {
                     <motion.span
                       key={item.label}
                       whileHover={{ scale: 1.05 }}
-                      className={`${activeLink === item.href ? "border-b-2 border-cyan-900" : ""} text-black block py-4 font-bold text-xl cursor-pointer`}
+                      className={`${
+                        activeLink === item.href ? "border-b-2 border-cyan-900" : ""
+                      } text-black block py-4 font-bold text-xl cursor-pointer`}
                     >
                       <Link href={item.href}>{item.label}</Link>
                     </motion.span>
                   ))}
-                  <Link href="/contact"><button className=" py-2 px-6 bg-violet-700 text-white">Contact Our Experts !</button></Link>
+                  <Link href="/contact">
+                    <button className="py-2 px-6 bg-violet-700 text-white">
+                      Contact Our Experts!
+                    </button>
+                  </Link>
                 </div>
               </motion.div>
             )}
@@ -96,11 +139,11 @@ const Nav = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="hidden md:flex justify-between items-center flex-col md:flex-row md:space-x-8"
+            className="hidden md:flex items-center justify-between space-x-8"
           >
             {navLinks.map((item) => (
-              <div 
-                key={item.label} 
+              <div
+                key={item.label}
                 onMouseEnter={item.label === "Our Services" ? handleMouseEnter : null}
                 onMouseLeave={item.label === "Our Services" ? handleMouseLeave : null}
                 className="relative"
@@ -108,17 +151,17 @@ const Nav = () => {
                 <motion.span
                   whileHover={{ scale: 1.1, originX: 0 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className={`${activeLink === item.href ? "border-b-2 border-cyan-400" : ""} block text-md py-2 font-medium md:py-0 cursor-pointer hover:border-b-2 text-black hover:border-cyan-400`}
+                  className={`${
+                    activeLink === item.href ? "border-b-2 border-cyan-400" : ""
+                  } block text-md font-medium cursor-pointer hover:border-b-2 hover:border-cyan-400`}
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </motion.span>
-
               </div>
             ))}
             <button className="px-3 py-2 bg-violet-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
-                    Contact Our Experts!
+              Contact Our Experts!
             </button>
-
           </motion.div>
         </nav>
       </header>
