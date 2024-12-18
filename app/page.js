@@ -1,5 +1,6 @@
 import About from "./Components/About";
 import Advantages from "./Components/Advantages";
+import Book from "./Components/Book";
 import Carousel from "./Components/Carousel";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
@@ -16,6 +17,7 @@ export default function Home() {
       <Advantages/>
       <Services/>
       <Numbers/>
+      <Book/>
     </div>
   );
 }
