@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className={`${font2.className} relative text-black mt-16 pb-12`}>
+    <div className={`${font2.className} relative bg-gray-100 text-black pt-16 pb-12`}>
       {/* Image Section */}
       <div className="md:flex items-center">
         {/* Left: Image */}

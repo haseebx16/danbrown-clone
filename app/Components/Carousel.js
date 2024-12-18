@@ -17,7 +17,7 @@ const Carousel = () => {
   const settings = {
     infinite: true,        
     speed: 500,            
-    slidesToShow: 4,       
+    slidesToShow: 5,       
     slidesToScroll: 1,     
     responsive: [          
       {
@@ -38,7 +38,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel-container my-16 overflow-hidden">
+    <div className="carousel-container bg-gray-100 py-16 overflow-hidden">
       <Slider {...settings}>
         {logoImages.map((logo, index) => (
           <div key={index} className="p-4">
