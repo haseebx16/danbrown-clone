@@ -6,6 +6,7 @@ import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
 import Numbers from "./Components/Numbers";
 import Services from "./Components/Services";
+import Hire from "./Components/Hire";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Services/>
       <Numbers/>
       <Book/>
+      <Hire/>
     </div>
   );
 }
