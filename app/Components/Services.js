@@ -8,8 +8,8 @@ import 'aos/dist/aos.css';
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Run animation only once when scrolled into view
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -43,7 +43,7 @@ const Services = () => {
 
         <div
           className='md:w-1/2 md:mt-0'
-          data-aos='fade-right' // AOS animation for flying in from below
+          data-aos='fade-right'
         >
           <div className='py-4 md:py-8 md:w-[37rem] w-screen h-[10rem] px-8 bg-blue-800 text-white'>
             <p className='text-3xl'>Ghost Writing</p>
@@ -60,7 +60,7 @@ const Services = () => {
           <div className='flex flex-col md:flex-row'>
             <div
               className='py-8 md:h-[17rem] h-[13rem] md:w-[19rem] w-screen px-8 bg-cyan-500 text-white'
-              data-aos='fade-left' // AOS animation for flying in from below
+              data-aos='fade-left' 
             >
               <p className='text-3xl'>Book Marketing</p>
               <p className='text-md mt-2'>
@@ -69,7 +69,7 @@ const Services = () => {
             </div>
             <div
               className='py-8 md:h-[17rem] h-[15rem] md:w-[18rem] w-screen px-8 bg-cyan-600 text-white'
-              data-aos='fade-up-right' // AOS animation for flying in from below
+              data-aos='fade-up-right'
             >
               <p className='md:text-2xl text-3xl'>Formatting & Proofreading</p>
               <p className='md:text-sm text-md mt-2'>
