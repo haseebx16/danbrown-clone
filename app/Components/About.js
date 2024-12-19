@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className={`${font2.className} relative bg-gray-100 text-black pt-16 pb-12`}>
+    <div className={`${font2.className} relative bg-gray-100  text-black pt-16 pb-12`}>
       {/* Image Section */}
-      <div className="md:flex items-center">
+      <div className="md:flex items-center overflow-hidden">
         {/* Left: Image */}
         <motion.div
-          className="md:w-1/2 px-4"
+          className="md:w-1/2 px-4 overflow-hidden"
           initial={{ x: -100, opacity: 0 }} // Initial animation state
           animate={{ x: 0, opacity: 1 }} // Final animation state
           transition={{ duration: 1.0, ease: 'easeInOut' }} // Animation properties
@@ -25,10 +25,10 @@ const About = () => {
 
         {/* Right: Content */}
         <motion.div
-          className="md:w-1/2 px-4 mt-8 md:mt-0"
+          className="md:w-1/2 px-4 mt-8 md:mt-0 overflow-hidden"
           initial={{ x: 100, opacity: 0 }} // Initial animation state
           animate={{ x: 0, opacity: 1 }} // Final animation state
-          transition={{ duration: 0.5, ease: 'easeInOut' }} // Animation properties
+          transition={{ duration: 1, ease: 'easeInOut' }} // Animation properties
         >
           <h2 className="md:text-6xl text-4xl font-extrabold leading-tight">Welcoming You to The Wonderful World of Becoming a Published Author</h2>
           <p className="mt-4 text-lg text-gray-500">

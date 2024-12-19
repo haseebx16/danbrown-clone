@@ -1,9 +1,11 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';  // Slick CSS
-import 'slick-carousel/slick/slick-theme.css';  // Slick theme CSS
+import 'slick-carousel/slick/slick-theme.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Carousel = () => {
   const logoImages = [
@@ -13,6 +15,13 @@ const Carousel = () => {
     '/site-logo4.png',
     '/site-logo5.png'
   ];
+
+  useEffect(() => {
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        }, []);
 
   const settings = {
     infinite: true,        
@@ -41,7 +50,7 @@ const Carousel = () => {
     <div className="carousel-container bg-gray-100 py-16 overflow-hidden">
       <Slider {...settings}>
         {logoImages.map((logo, index) => (
-          <div key={index} className="p-4">
+          <div key={index} data-aos="fade-right" className="p-4">
             <img src={logo} alt={`Brand logo ${index + 1}`} className="w-40 h-12" />
           </div>
         ))}

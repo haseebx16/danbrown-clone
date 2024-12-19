@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { font2 } from "./font/poppins";
 
 const Hero = () => {
   return (
-    <div className="relative text-black">
+    <div className={`${font2.className} relative text-black`}>
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-80"></div>
 
@@ -22,7 +23,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
       >
-        <h1 className="text-md md:text-3xl font-medium uppercase leading-relaxed">
+        <h1 className="text-md md:text-3xl font-bold uppercase leading-relaxed">
           Manifest Your <br /> Concept Through Ghost Writing
         </h1>
         <p className="text-3xl md:text-8xl font-bold leading-tight mt-4">

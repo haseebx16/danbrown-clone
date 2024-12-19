@@ -9,14 +9,14 @@ const Advantages = () => {
   // Animation Variants
   const headingVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
 
   const highlightVariants = {
     hidden: { width: 0 },
     visible: {
       width: "100%",
-      transition: { duration: 1, ease: "easeInOut" },
+      transition: { duration: 0.5, ease: "easeInOut" },
     },
   };
 

@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         customBeige: "#ede6dd",
+        blue: {
+          900: "#073b70", // Customize the blue shade
+        },
       },
     },
   },

@@ -7,6 +7,8 @@ import Nav from "./Components/Nav";
 import Numbers from "./Components/Numbers";
 import Services from "./Components/Services";
 import Hire from "./Components/Hire";
+import Testimonials from "./Components/Testimonials";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Numbers/>
       <Book/>
       <Hire/>
+      <Testimonials/>
+      <Footer/>
     </div>
   );
 }
