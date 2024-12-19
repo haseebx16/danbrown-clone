@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { FaPenNib, FaBook, FaAward } from 'react-icons/fa';
-import { font2 } from './font/poppins';
+import { font2 } from '../font/poppins';
 
 const Advantages = () => {
   // Animation Variants

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { font2 } from "./font/poppins";
+import { font2 } from "../font/poppins";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

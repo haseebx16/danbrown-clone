@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { font2 } from './font/poppins';
+import { font2 } from '../font/poppins';
 import { motion } from 'framer-motion';
 
 const About = () => {

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { font2 } from "./font/poppins";
+import { font2 } from "../font/poppins";
 
 const Hero = () => {
   return (
