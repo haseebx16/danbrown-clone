@@ -3,12 +3,13 @@
 import React, { useEffect } from 'react';
 import Nav from '../Components/Sections/Nav';
 import { font2 } from '../Components/font/poppins';
-// import Hire from '../Components/Sections/Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutNumber from '../Components/Section-Pages/AboutNumber';
+import AboutBrilliant from '../Components/Section-Pages/AboutBrilliant';
+import AboutServices from '../Components/Section-Pages/AboutServices';
 
 const page = () => {
   useEffect(() => {
@@ -52,6 +53,8 @@ const page = () => {
         </div>
       </div>
       <AboutNumber/>
+      <AboutBrilliant/>
+      <AboutServices/>
       <section
         className={`${font2.className} md:mt-0`}
       >
