@@ -15,7 +15,7 @@ const AboutServices = () => {
     }, []);
 
   return (
-    <section className={`${font2.className} min-h-screen bg-customBeige py-10 px-4`}>\
+    <section className={`${font2.className} min-h-screen bg-customBeige py-10 px-4`}>
       <div className='flex justify-center items-center pb-16'>
         <h1 data-aos="fade-down" className='md:text-6xl hidden md:block font-bold'>
           About what we do

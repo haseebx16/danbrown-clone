@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import AboutNumber from '../Components/Section-Pages/AboutNumber';
 import AboutBrilliant from '../Components/Section-Pages/AboutBrilliant';
 import AboutServices from '../Components/Section-Pages/AboutServices';
+import MainSection from '../Components/Section-Pages/MainSection';
 
 const page = () => {
   useEffect(() => {
@@ -21,38 +22,7 @@ const page = () => {
 
   return (
     <div className="overflow-hidden">
-      <Nav />
-      <div
-        className={`${font2.className} bg-gradient-to-br from-cyan-500 to-orange-300 h-[25rem] md:h-[35rem]`}
-      >
-        <div className="flex flex-col justify-center items-center md:items-start md:justify-start p-12 text-white">
-          <h1 data-aos="fade-down" className="text-xl md:text-3xl pt-12">
-            Get To Know What We're About
-          </h1>
-          <h1
-            data-aos="fade-up-right"
-            className="text-2xl md:text-6xl md:max-w-sm pt-2 font-bold"
-          >
-            About DB Clone Academy
-          </h1>
-          <p
-            data-aos="fade-up-left"
-            className="font-light md:text-left md:text-xl pt-2 text-center max-w-sm"
-          >
-            We are a one-stop ghostwriting company offering a wide range of
-            services to our clientele.
-          </p>
-          <div data-aos="fade-up" className="space-x-2">
-            <button className="bg-purple-700 px-4 py-2 mt-4 rounded-md text-white">
-              Let's Get Started
-            </button>
-            <button className="bg-sky-700 px-4 py-2 mt-4 rounded-md text-white">
-              Live Chat
-            </button>
-          </div>
-        </div>
-      </div>
-      <AboutNumber/>
+      <MainSection subHead="Get To Know What We're About" mainHead="About DB Clone Academy" text="We are a one-stop ghostwriting company offering a wide range of services to our clientele."/>
       <AboutBrilliant/>
       <AboutServices/>
       <section
