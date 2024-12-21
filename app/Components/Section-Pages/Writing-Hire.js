@@ -1,7 +1,7 @@
 import React from 'react';
 import { font2 } from '../font/poppins';
 
-const WritingHire = ({ head, text1, text2 }) => {
+const WritingHire = ({ picsrc ,head, text1, text2 }) => {
   return (
     <div
       className={`${font2.className} h-auto md:h-[39rem] bg-violet-950`}
@@ -10,7 +10,7 @@ const WritingHire = ({ head, text1, text2 }) => {
         {/* Left Image */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/hire.png"
+            src={picsrc}
             alt="Hire Ghostwriter"
             className="w-96 h-[21rem] mt-8 md:w-[35rem] md:h-[30rem]"
           />
