@@ -5,7 +5,7 @@ import MainSection from '../Components/Section-Pages/MainSection'
 import { font2 } from '../Components/font/poppins'
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import Hire from '../Components/Sections/Hire';
+// import Hire from '../Components/Sections/Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
 
@@ -24,7 +24,7 @@ const page = () => {
       <MainSection subHead="SAVE YOUR TIME AND EFFORT BY GOING FOR" mainHead="Our Ghostwriting Services
       " text="It’s time for you to get your job done efficiently and professionally by hiring our ghostwriting services."/>
       <div className={`${font2.className} flex flex-col justify-center relative items-center`}>
-        <h1 className='text-center text-3xl md:text-6xl p-12 font-bold'>
+        <h1 data-aos="fade-right" className='text-center text-3xl md:text-6xl p-12 font-bold'>
         <span
             className="absolute inset-0 bg-yellow-100 h-[1%] md:h-[1%] top-[2%] md:top-[3%] z-0"
             style={{ width: '50%' }}
@@ -33,48 +33,48 @@ const page = () => {
                 With Dan Brown Academy’s Ghostwriting, Editing, 
                Publishing, And Marketing Services</span>
         </h1>
-        <div className='flex flex-col space-x-8 md:flex-row justify-center items-center'>
-          <img src='/ag1.png' className='w-96 h-80'/>
+        <div className='flex flex-col md:space-x-8 md:flex-row justify-center items-center'>
+          <img data-aos="fade-right" src='/ag1.png' className='w-96 h-80' />
           <div className='flex flex-col justify-start items-start p-2'>
-              <h1 className='text-3xl mt-6'>Professional <span className='text-blue-500'>Ghostwriting</span> Services</h1>
-              <p className='text-gray-500 md:max-w-xl mt-4'>
-                With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
-              </p>
-              <div className='space-y-2 mt-4'>
-                <p>&#x2022;&nbsp;Proper planning & guidance</p>
-                <p>&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
-                <p>&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
-                <p>&#x2022;&nbsp;In-depth discussions throughout the process</p>
-              </div>
+            <h1 data-aos="fade-left" className='text-3xl md:text-5xl mt-6 md:max-w-xl text-left'>Professional <span className='text-blue-500'>Ghostwriting</span> Services</h1>
+            <p data-aos="fade-up" className='text-gray-500 md:max-w-xl mt-4 text-left'>
+              With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
+            </p>
+            <div className='space-y-2 mt-4 text-left'>
+              <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>
+              <p data-aos="fade-up-left">&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
+              <p data-aos="fade-up-right">&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
+              <p data-aos="fade-up-left">&#x2022;&nbsp;In-depth discussions throughout the process</p>
+            </div>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row md:space-x-8 justify-center items-center mt-8'>
+        <div className='flex flex-col md:flex-row-reverse md:space-x-8 justify-center items-center mt-8'>
           <img src='/ag3.png' className='w-96 h-80'/>
           <div className='flex flex-col justify-start items-start p-2'>
-              <h1 className='text-3xl mt-6'>Book <span className='text-blue-500'>Cover</span> Designs</h1>
-              <p className='text-gray-500 md:max-w-xl mt-4'>
+              <h1 data-aos="fade-right" className='text-3xl md:text-5xl mt-6'>Book <span className='text-blue-500'>Cover</span> Designs</h1>
+              <p data-aos="fade-left" className='text-gray-500 md:max-w-xl mt-4'>
                 With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
               <div className='space-y-2 mt-4'>
-                <p>&#x2022;&nbsp;Proper planning & guidance</p>
-                <p>&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
-                <p>&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
-                <p>&#x2022;&nbsp;In-depth discussions throughout the process</p>
+                <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>
+                <p data-aos="fade-up-left">&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
+                <p data-aos="fade-up-right">&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
+                <p data-aos="fade-up-left">&#x2022;&nbsp;In-depth discussions throughout the process</p>
               </div>
           </div>
         </div>
         <div className='flex flex-col md:flex-row md:space-x-8 justify-center items-center mt-8'>
-          <img src='/ag2.png' className='w-96 h-80'/>
+          <img data-aos="fade-right" src='/ag2.png' className='w-96 h-80'/>
           <div className='flex flex-col justify-start items-start p-2'>
-              <h1 className='text-3xl mt-6'>Book  <span className='text-blue-500'>Publishing</span> Services</h1>
-              <p className='text-gray-500 md:max-w-xl mt-4'>
+              <h1 data-aos="fade-left"  className='text-3xl md:max-w-lg md:text-5xl mt-6'>Book  <span className='text-blue-500'>Publishing</span> Services</h1>
+              <p data-aos="fade-down" className='text-gray-500 md:max-w-xl mt-4'>
                 With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
               <div className='space-y-2 mt-4'>
-                <p>&#x2022;&nbsp;Proper planning & guidance</p>
-                <p>&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
-                <p>&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
-                <p>&#x2022;&nbsp;In-depth discussions throughout the process</p>
+                <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>
+                <p data-aos="fade-up-left">&#x2022;&nbsp;Written by Qualified Ghostwriting Professionals</p>
+                <p data-aos="fade-up-right">&#x2022;&nbsp;100% unique and grammatically accurate content verified</p>
+                <p data-aos="fade-up-left">&#x2022;&nbsp;In-depth discussions throughout the process</p>
               </div>
           </div>
         </div>
