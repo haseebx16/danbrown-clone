@@ -58,7 +58,7 @@ const page = () => {
 
             {/* List of features with scrollable section */}
             <div className="max-h-[175px] flex flex-col justify-center items-center  overflow-y-scroll mt-8 w-full">
-                <p className='text-gray-600 mt-12 text-left'>&#8226; Writing 50-100 Pages</p>
+                <p className='text-gray-600 mt-12 text-left'>&#8226; Writing 100-150 Pages</p>
                 <p className='text-gray-600 text-left'>&#8226; Editing</p>
                 <p className='text-gray-600 text-left'>&#8226; Proofreading</p>
                 <p className='text-gray-600 text-left'>&#8226; Layout Adjustment</p>
@@ -75,41 +75,113 @@ const page = () => {
             </div>
 
         {/* Plan 3 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border border-violet-600 rounded-lg shadow-lg" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-center">Standard Package</h2>
-          <p className='text-2xl font-light text-center'>50% Off !</p>
-          <p className="text-gray-600 mt-4">Best for established businesses.</p>
-          <p className='text-gray-600 mt-8 text-left'>&#8226;Writing 50-100 Pages</p>
-            <p className='text-gray-600 text-left'>&#8226;Editing</p>
-            <p className='text-gray-600 text-left'>&#8226;Proofreading</p>
-            <p className='text-gray-600 text-left'>&#8226;Layout Adjustment</p>
-            <p className='text-gray-600 text-left'>&#8226;100% Ownership Right</p>
-            <p className='text-gray-600 text-left'>&#8226;Unlimited Revisions</p>
-            <p className='text-gray-600 text-left'>&#8226;Custom Book Cover Design</p>
-            <p className='text-gray-600 text-left'>&#8226;eBook, Paper back (2 formats of your book)</p>
-            <p className='text-gray-600 text-left'>&#8226;Publication on Amazon & Kindle</p>
-            <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
-            <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-            <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        {/* Plan 3 */}
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-violet-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-center">Standard Package</h2>
+        <p className='text-2xl font-light text-center'>50% Off !</p>
+        <p className="text-gray-600 mt-4">Best for established businesses.</p>
+        
+        {/* Scrollable Features Section */}
+        <div className="max-h-[175px] overflow-y-scroll flex flex-col justify-center mt-8 items-center w-full">
+            <p className='text-gray-600 text-left mt-12'>&#8226; Writing 150-200 Pages</p>
+            <p className='text-gray-600 text-left'>&#8226; Editing</p>
+            <p className='text-gray-600 text-left'>&#8226; Proofreading</p>
+            <p className='text-gray-600 text-left'>&#8226; Layout Adjustment</p>
+            <p className='text-gray-600 text-left'>&#8226; 100% Ownership Right</p>
+            <p className='text-gray-600 text-left'>&#8226; Unlimited Revisions</p>
+            <p className='text-gray-600 text-left'>&#8226; Custom Book Cover Design</p>
+            <p className='text-gray-600 text-left'>&#8226; eBook, Paperback (2 formats of your book)</p>
+            <p className='text-gray-600 text-left'>&#8226; Publication on Amazon & Kindle</p>
+        </div>
+        
+        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
+        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
-        {/* Plan 4 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border border-pink-600 rounded-lg shadow-lg" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-center">Professional Package</h2>
-          <p className="text-gray-600 mt-4">Tailored solutions for large organizations.</p>
+{/* Plan 4 */}
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-pink-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-center">Professional Package</h2>
+        <p className='text-2xl font-light text-center'>50% Off !</p>
+        <p className="text-gray-600 mt-4">Tailored solutions for large organizations.</p>
+        
+        {/* Scrollable Features Section */}
+        <div className="max-h-[200px] overflow-y-scroll p-4 mt-8 w-full">
+            <p className='text-gray-600 text-left'>&#8226; Writing 250-300 Pages</p>
+            <p className='text-gray-600 text-left'>&#8226; Editing</p>
+            <p className='text-gray-600 text-left'>&#8226; Proofreading</p>
+            <p className='text-gray-600 text-left'>&#8226; Layout Adjustment</p>
+            <p className='text-gray-600 text-left'>&#8226; 100% Ownership Right</p>
+            <p className='text-gray-600 text-left'>&#8226; Unlimited Revisions</p>
+            <p className='text-gray-600 text-left'>&#8226; Custom Book Cover Design</p>
+            <p className='text-gray-600 text-left'>&#8226; eBook, Paperback, Hardcover</p>
+            <p className='text-gray-600 text-left'>&#8226; Publication on Amazon, Kindle, Barnes & Noble</p>
+            <p className='text-gray-600 text-left'>&#8226; 2-4 Pages Author Website</p>
+            <p className='text-gray-600 text-left'>&#8226; 1-Year Hosting & Domain</p>
+        </div>
+        
+        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
+        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
         {/* Plan 5 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border border-yellow-600 rounded-lg shadow-lg" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-center">Expert Package</h2>
-          <p className="text-gray-600 mt-4">Comprehensive plan for businesses.</p>
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-yellow-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-center">Expert Package</h2>
+        <p className='text-2xl font-light text-center'>50% Off !</p>
+        <p className="text-gray-600 mt-4">Comprehensive plan for businesses.</p>
+        
+        {/* Scrollable Features Section */}
+        <div className="max-h-[200px] overflow-y-scroll p-4 mt-8 w-full">
+            <p className='text-gray-600 text-left'>&#8226; Writing Unlimited Pages</p>
+            <p className='text-gray-600 text-left'>&#8226; Editing</p>
+            <p className='text-gray-600 text-left'>&#8226; Proofreading</p>
+            <p className='text-gray-600 text-left'>&#8226; Layout Adjustment</p>
+            <p className='text-gray-600 text-left'>&#8226; 100% Ownership Right</p>
+            <p className='text-gray-600 text-left'>&#8226; Unlimited Revisions</p>
+            <p className='text-gray-600 text-left'>&#8226; Custom Book Cover Design</p>
+            <p className='text-gray-600 text-left'>&#8226; eBook, Paperback, Hardcover</p>
+            <p className='text-gray-600 text-left'>&#8226; Publication on Amazon, Kindle, Barnes & Noble</p>
+            <p className='text-gray-600 text-left'>&#8226; 2-4 Pages Author Website</p>
+            <p className='text-gray-600 text-left'>&#8226; Dedicated Team of Bestselling Writers</p>
+            <p className='text-gray-600 text-left'>&#8226; ISBN</p>
+            <p className='text-gray-600 text-left'>&#8226; 30-60 Seconds Book Video Trailer</p>
+        </div>
+        
+        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
+        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
         {/* Plan 6 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border border-green-600 rounded-lg shadow-lg" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-center">Best-Seller Package</h2>
-          <p className="text-gray-600 mt-4">Full-suite services for large-scale operations.</p>
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-green-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <h2 className="text-3xl font-bold text-center">Best-Seller Package</h2>
+        <p className='text-2xl font-light text-center'>50% Off !</p>
+        <p className="text-gray-600 mt-4">Full-suite services for large-scale operations.</p>
+        
+        {/* Scrollable Features Section */}
+        <div className="max-h-[200px] overflow-y-scroll p-4 mt-8 w-full">
+            <p className='text-gray-600 text-left'>&#8226; Writing Unlimited Pages</p>
+            <p className='text-gray-600 text-left'>&#8226; Editing</p>
+            <p className='text-gray-600 text-left'>&#8226; Proofreading</p>
+            <p className='text-gray-600 text-left'>&#8226; Layout Adjustment</p>
+            <p className='text-gray-600 text-left'>&#8226; 100% Ownership Right</p>
+            <p className='text-gray-600 text-left'>&#8226; Unlimited Revisions</p>
+            <p className='text-gray-600 text-left'>&#8226; Custom Book Cover Design</p>
+            <p className='text-gray-600 text-left'>&#8226; eBook, Paperback, Hardcover</p>
+            <p className='text-gray-600 text-left'>&#8226; Publication on Amazon, Kindle, Barnes & Noble</p>
+            <p className='text-gray-600 text-left'>&#8226; 2-4 Pages Author Website</p>
+            <p className='text-gray-600 text-left'>&#8226; Dedicated Team of Bestselling Writers</p>
+            <p className='text-gray-600 text-left'>&#8226; ISBN</p>
+            <p className='text-gray-600 text-left'>&#8226; 60-90 Seconds Book Video Trailer</p>
+            <p className='text-gray-600 text-left'>&#8226; Book Marketing (Advanced Marketing)</p>
         </div>
+        
+        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
+        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        </div>
+
       </div>
     </div>
   );
