@@ -17,7 +17,7 @@ const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
 
   return (
     <div
-      className={`${font2.className} h-auto md:h-[39rem] bg-${bg}`}
+      className={`${font2.className} h-auto md:h-[39rem] bg-violet-950`}
     >
       <div className="flex flex-col md:flex-row p-4 justify-center items-center">
         {/* Left Image */}
