@@ -31,13 +31,13 @@ const Nav = () => {
   return (
     <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
       <header
-        className={`${font2.className} w-screen bg-darkGrey bg-opacity-90 py-4 text-black`}
+        className={`${font2.className} w-screen bg-darkGrey bg-opacity-90 py-0 text-black`}
       >
         <nav className="flex items-center justify-between h-full px-8">
           <Link href="/">
             <div className="flex items-center">
-              <p>DB CLONE</p>
-              {/* <img src="/white-logo.png" alt="Logo" className="w-auto h-7 sm:h-10 md:h-10 lg:h-14" /> */}
+             
+              <img src="/main-logo-1.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '120px' }} />
             </div>
           </Link>
 
@@ -89,8 +89,8 @@ const Nav = () => {
                 className="flex flex-col items-center justify-center h-screen fixed inset-0 bg-gradient-to-br from-cyan-400 to-orange-300 z-50 md:hidden"
               >
                 <div className="absolute top-0 left-0 p-4">
-                  <p>DB CLONE</p>
-                  {/* <img src="/white-logo.png" alt="Logo" className="w-auto h-7" /> */}
+                  
+                  <img src="/main-logo-1.png" alt="Logo" className="w-auto h-7" style={{ height: '120px' }} />
                 </div>
 
                 <div className="absolute top-0 right-0 p-4">
