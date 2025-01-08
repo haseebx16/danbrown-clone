@@ -15,14 +15,12 @@ const Footer = () => {
     }, []);
 
   return (
-    <footer className={`${font2.className} bg-blue-900 text-gray-300 mt-2 py-16 `}>
-    <div className="container mx-auto flex flex-wrap justify-evenly items-start space-y-6 md:space-y-0">
+    <footer className={`${font2.className} bg-blue-900 text-gray-300 mt-2 `}>
+    <div className="container mx-auto flex flex-wrap justify-evenly items-center space-y-6 md:space-y-0">
       {/* Logo Section */}
-      <div className="flex flex-col items-start space-y-2">
-        <div data-aos="fade-right" className="bg-black text-blue-400 text-2xl font-bold w-12 h-12 flex items-center justify-center rounded-md">
-          DB
-        </div>
-        <p data-aos="fade-left" className="text-lg font-bold">DB Clone</p>
+      <div className="flex flex-col items-start">
+      <img src="/main-logo-1.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '200px', width: "200px" }} />
+        
       </div>
 
       {/* Links Section */}
