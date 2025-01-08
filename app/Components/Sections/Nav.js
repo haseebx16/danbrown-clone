@@ -90,7 +90,7 @@ const Nav = () => {
               >
                 <div className="absolute top-0 left-0 p-4">
                   
-                  <img src="/main-logo-1.png" alt="Logo" className="w-auto h-7" style={{ height: '120px' }} />
+                  <img src="/footer-logo.png" alt="Logo" className="w-auto h-7" style={{ height: '120px' }} />
                 </div>
 
                 <div className="absolute top-0 right-0 p-4">

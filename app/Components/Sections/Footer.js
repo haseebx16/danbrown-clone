@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="container mx-auto flex flex-wrap justify-evenly items-center space-y-6 md:space-y-0">
       {/* Logo Section */}
       <div className="flex flex-col items-start">
-      <img src="/main-logo-1.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '200px', width: "200px" }} />
+      <img src="/footer-logo.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '200px', width: "200px" }} />
         
       </div>
 
