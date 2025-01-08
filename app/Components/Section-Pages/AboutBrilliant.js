@@ -52,7 +52,7 @@ const AboutBrilliant = () => {
           <p className="text-lg text-gray-700">
             We don’t mean to brag about how good we are at what we do but, hey,
             we deserve to say a little something. With more than a decade of
-            being in the ghostwriting industry, Dan Brown Academy is weathered
+            being in the ghostwriting industry, Stephen King Academy is weathered
             and experienced to deal with projects of any kind. We’ve helped
             materialize our clients’ concepts, ideas, and stories into a fully
             written book, and we’ve assisted our clients with their

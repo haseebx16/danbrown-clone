@@ -30,7 +30,7 @@ const page = () => {
             style={{ width: '50%' }}
           ></span>
                 <span className='relative z-10'>You Get Only the Best of the Best 
-                With Dan Brown Academy’s Ghostwriting, Editing, 
+                With Stephen King Academy’s Ghostwriting, Editing, 
                Publishing, And Marketing Services</span>
         </h1>
         <div className='flex flex-col md:space-x-8 md:flex-row justify-center items-center'>
@@ -38,7 +38,7 @@ const page = () => {
           <div className='flex flex-col justify-start items-start p-2'>
             <h1 data-aos="fade-left" className='text-3xl md:text-5xl mt-6 md:max-w-xl text-left'>Professional <span className='text-blue-500'>Ghostwriting</span> Services</h1>
             <p data-aos="fade-up" className='text-gray-500 md:max-w-xl mt-4 text-left'>
-              With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
+              With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
             </p>
             <div className='space-y-2 mt-4 text-left'>
               <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>
@@ -53,7 +53,7 @@ const page = () => {
           <div className='flex flex-col justify-start items-start p-2'>
               <h1 data-aos="fade-right" className='text-3xl md:text-5xl mt-6'>Book <span className='text-blue-500'>Cover</span> Designs</h1>
               <p data-aos="fade-left" className='text-gray-500 md:max-w-xl mt-4'>
-                With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
+                With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
               <div className='space-y-2 mt-4'>
                 <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>
@@ -68,7 +68,7 @@ const page = () => {
           <div className='flex flex-col justify-start items-start p-2'>
               <h1 data-aos="fade-left"  className='text-3xl md:max-w-lg md:text-5xl mt-6'>Book  <span className='text-blue-500'>Publishing</span> Services</h1>
               <p data-aos="fade-down" className='text-gray-500 md:max-w-xl mt-4'>
-                With Dan Brown Academy, you get only the most Dan Brown Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
+                With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
               <div className='space-y-2 mt-4'>
                 <p data-aos="fade-up-right">&#x2022;&nbsp;Proper planning & guidance</p>

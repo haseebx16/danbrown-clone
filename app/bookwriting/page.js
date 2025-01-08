@@ -31,7 +31,7 @@ const page = () => {
                   Premium & Exclusive Ghostwriting Services For Your Ideas
                 </h1>
                 <p data-aos="fade-up" className='text-gray-500 max-w-sm md:max-w-3xl md:text-2xl mt-4 text-center md:text-left'>
-                  At Dan Brown Academy, our clients are offered premium and exclusive ghostwriting services for all your ideas, stories, and concepts to come to life. Our team of professional writers are specialized in every genre known to man; we have a writer for every genre! The niche specialty of our writers is what sets them apart from other ghostwriters.
+                  At Stephen King Academy, our clients are offered premium and exclusive ghostwriting services for all your ideas, stories, and concepts to come to life. Our team of professional writers are specialized in every genre known to man; we have a writer for every genre! The niche specialty of our writers is what sets them apart from other ghostwriters.
                 </p>
           </div>
       </div>
@@ -107,7 +107,7 @@ const page = () => {
           <Significance/>
           <WritingHire head={"Why you should hire a ghostwriter for your book"} 
             text1={"Hiring a ghostwriter doesn’t mean you aren’t part of the production process of your content. In today’s fast-paced world of tight schedules and even tighter deadlines, hiring a ghostwriter can save you the trouble (and the time) of getting your work done efficiently and reliably. A ghostwriter can not only save you time and the work, but they are also a good way to enhance your content as they can suggest ideas or take creative liberties with your content."} 
-            text2={"At Dan Brown Academy, our ghostwriters take a dedicated ownership of your project to ensure that they do the content complete justice. Of course, the book is still yours by right and legality, but our ghostwriters will put their heart and soul into your book to ensure it surpasses your expectations."}
+            text2={"At Stephen King Academy, our ghostwriters take a dedicated ownership of your project to ensure that they do the content complete justice. Of course, the book is still yours by right and legality, but our ghostwriters will put their heart and soul into your book to ensure it surpasses your expectations."}
             picsrc={"/hire.png"}
             bg={"violet-950"}
           />

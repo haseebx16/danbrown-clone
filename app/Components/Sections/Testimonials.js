@@ -16,17 +16,17 @@ const Testimonials = () => {
 
     const testimonials = [
         {
-            text: "As a teacher, I don’t get time for pretty much ANYTHING, let alone writing books about academia for my students. I was so relieved when I discovered Dan Brown Academy and happy when I got to see the work they did for me. Now my students can read about specific concepts the way I want them to.",
+            text: "As a teacher, I don’t get time for pretty much ANYTHING, let alone writing books about academia for my students. I was so relieved when I discovered Stephen King Academy and happy when I got to see the work they did for me. Now my students can read about specific concepts the way I want them to.",
             name: "Meghan Bowen",
             role: "Teacher",
         },
         {
-            text: "Working with Dan Brown Academy has been a game-changer for my career. They helped me craft a book that truly represents my ideas and expertise. The team is professional, creative, and supportive every step of the way.",
+            text: "Working with Stephen King Academy has been a game-changer for my career. They helped me craft a book that truly represents my ideas and expertise. The team is professional, creative, and supportive every step of the way.",
             name: "Jonathan Carter",
             role: "Business Consultant",
         },
         {
-            text: "I always dreamed of publishing my own book, but the process seemed daunting. Thanks to Dan Brown Academy, my dream is now a reality. They took care of everything from writing to publishing, and the results are beyond my expectations!",
+            text: "I always dreamed of publishing my own book, but the process seemed daunting. Thanks to Stephen King Academy, my dream is now a reality. They took care of everything from writing to publishing, and the results are beyond my expectations!",
             name: "Emily Roberts",
             role: "Entrepreneur",
         },

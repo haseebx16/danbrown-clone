@@ -72,7 +72,7 @@ const Advantages = () => {
         >
           Is writing a viable career? In short, yes! But it takes very strong writing skills to
           stand out among the countless aspiring online writers out there. It also takes a lot of
-          hard work and dependability, along with a humble attitude. Dan Brown Academy is here to
+          hard work and dependability, along with a humble attitude. Stephen King Academy is here to
           alleviate the hard work aspect of becoming a writer so you can enjoy the benefits of
           receiving royalties, recognition, and credibility with your stories and your ideas. The
           world deserves to know what you have to share!

@@ -24,7 +24,7 @@ const page = () => {
         <MainSection subHead={"ROYALTIES AND RECOGNITION WITH"} mainHead={"Our Online Book Marketing"} text={"Our book marketing service will ensure your book is distributed and promoted properly so you can maximize your royalties and gain more recognition."}/>
         <div className={`${font2.className} flex bg-gray-50 flex-col overflow-hidden  items-center`}>
             <h1 data-aos="fade-down" className='text-3xl md:text-6xl font-bold pt-12 text-center'>Our Book Marketing Services</h1>
-            <p data-aos="fade-up" className='text-gray-500 max-w-md md:text-xl md:mt-2 text-center'>At Dan Brown Academy, you can avail a variety of marketing services for your book. We offer six different types of marketing services as found below.</p>
+            <p data-aos="fade-up" className='text-gray-500 max-w-md md:text-xl md:mt-2 text-center'>At Stephen King Academy, you can avail a variety of marketing services for your book. We offer six different types of marketing services as found below.</p>
         </div>
         
         <div className='bg-gray-50 md:flex'>

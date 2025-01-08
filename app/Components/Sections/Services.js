@@ -20,7 +20,7 @@ const Services = () => {
           A wide range of ghostwriting services For you to avail and becoming a published author!
         </h1>
         <p className='text-gray-500 md:pt-6 pt-3 pb-8 md:pb-0 md:text-center text-left max-w-4xl'>
-          At Dan Brown Academy, our clients can avail a wide range of ghostwriting services to get one step closer to becoming a successfully published author. We are sure you will find our range of services to be comprehensive.
+          At Stephen King Academy, our clients can avail a wide range of ghostwriting services to get one step closer to becoming a successfully published author. We are sure you will find our range of services to be comprehensive.
         </p>
       </div>
       <div className='md:flex'>

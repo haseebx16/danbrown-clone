@@ -32,7 +32,7 @@ const About = () => {
         >
           <h2 className="md:text-6xl text-4xl font-extrabold leading-tight">Welcoming You to The Wonderful World of Becoming a Published Author</h2>
           <p className="mt-4 text-lg text-gray-500">
-            Dan Brown Academy welcomes you, our esteemed potential client, to the wonderful and magnificent world of ghostwriting! Ghostwriting is a professional service offered by talented and creative professional writers who are willing to use their expertise with the written word to formulate your ideas and concepts into a worded reality.
+            Stephen King Academy welcomes you, our esteemed potential client, to the wonderful and magnificent world of ghostwriting! Ghostwriting is a professional service offered by talented and creative professional writers who are willing to use their expertise with the written word to formulate your ideas and concepts into a worded reality.
           </p>
           <p className="mt-4 text-lg text-gray-500">
             It’s a great service to avail, especially for those too busy to write their own books but have concepts, ideas, or personal experiences to share with the rest of the world (such as celebrities or entrepreneurs). Ghostwriting is also really useful to aspiring writers suffering from writer’s block or those who have stories to tell but aren’t confident in their ability to write it down.
