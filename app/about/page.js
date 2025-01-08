@@ -22,7 +22,7 @@ const page = () => {
 
   return (
     <div className="overflow-hidden">
-      <MainSection subHead="Get To Know What We're About" mainHead="About DB Clone Academy" text="We are a one-stop ghostwriting company offering a wide range of services to our clientele."/>
+      <MainSection subHead="Get To Know What We're About" mainHead="About Stephen King Academy Academy" text="We are a one-stop ghostwriting company offering a wide range of services to our clientele."/>
       <AboutBrilliant/>
       <AboutServices/>
       <section
