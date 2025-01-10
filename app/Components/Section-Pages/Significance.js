@@ -13,7 +13,7 @@ const Significance = () => {
             {/* Left Content */}
             <div className='md:w-1/2 max-w-4xl mb-8 md:mb-0'>
               <h1 data-aos="fade-down" className='text-3xl md:text-4xl font-bold mb-6'>
-                We recognize the <span className='underline decoration-yellow-500'>significance</span> of a well-told story
+                We recognize the <span className='underline decoration-red-600'>significance</span> of a well-told story
               </h1>
               <p data-aos="fade-up" className='text-gray-600 text-lg p-4 md:text-lg'>
                 Do you want to get your ideas published but cannot find the appropriate platform? Stephen King Academy is your ultimate destination. Our expert ghostwriters know how to captivate the audience by sharing a unique idea or story. We are known for creating well-composed, creative, and the finest quality content, prioritizing 100% customer satisfaction.

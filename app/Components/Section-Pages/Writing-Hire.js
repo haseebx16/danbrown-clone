@@ -24,7 +24,7 @@ const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
 
   return (
     <div
-      className={`${timesNewRoman.className} h-auto md:h-[39rem] bg-violet-950`}
+      className={`${timesNewRoman.className} h-auto md:h-[39rem] bg-gradient-to-b from-red-700 via-red-900 to-black`}
     >
       <div className="flex flex-col md:flex-row p-4 justify-center items-center">
         {/* Left Image */}
@@ -39,13 +39,13 @@ const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
 
         {/* Right Content */}
         <div className="md:w-1/2 md:pl-8">
-          <h1 data-aos="fade-down" className="text-3xl md:text-5xl text-gray-400 font-bold md:pt-4">
+          <h1 data-aos="fade-down" className="text-3xl md:text-5xl text-white font-bold md:pt-4">
             {head}
           </h1>
-          <p data-aos="fade-up-right" className="text-gray-400 md:text-lg mt-4">
+          <p data-aos="fade-up-right" className="text-white md:text-lg mt-4">
             {text1}
           </p>
-          <p data-aos="fade-up" className="text-gray-400 md:text-lg mt-4">
+          <p data-aos="fade-up" className="text-white md:text-lg mt-4">
             {text2}
           </p>
         </div>

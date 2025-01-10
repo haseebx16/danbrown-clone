@@ -26,7 +26,7 @@ const AboutBrilliant = () => {
       <div className="text-center">
         <h2 data-aos="fade-right" className="text-3xl md:text-6xl font-bold text-gray-900 sm:text-4xl">
           <span
-            className="absolute inset-0 bg-yellow-100 h-[1%] md:left-[25%] md:h-[5%] top-[4%] md:top-[8%] z-0"
+            className="absolute inset-0 bg-red-600 h-[1%] md:left-[25%] md:h-[5%] top-[4%] md:top-[8%] z-0"
             style={{ width: '50%' }}
           ></span>
           <span className="relative z-10">
@@ -37,21 +37,21 @@ const AboutBrilliant = () => {
       <div className="mt-10 flex flex-col md:flex-row items-center md:items-start md:space-x-10">
         {/* Left Section (Cards) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 md:w-1/2">
-          <div data-aos="fade-right" className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="text-4xl font-bold text-indigo-600">10+</p>
-            <p className="mt-2 text-gray-700">Years of Experience</p>
+          <div data-aos="fade-right" className="flex flex-col items-center bg-black p-6 rounded-lg shadow-md">
+            <p className="text-4xl font-bold text-red-600">10+</p>
+            <p className="mt-2 text-white">Years of Experience</p>
           </div>
-          <div data-aos="fade-left" className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="text-4xl font-bold text-green-600">1000+</p>
-            <p className="mt-2 text-gray-700">Books Written</p>
+          <div data-aos="fade-left" className="flex flex-col items-center bg-black p-6 rounded-lg shadow-md">
+            <p className="text-4xl font-bold text-red-600">1000+</p>
+            <p className="mt-2 text-white">Books Written</p>
           </div>
-          <div data-aos="fade-right" className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="text-4xl font-bold text-purple-600">100+</p>
-            <p className="mt-2 text-gray-700">Internationally Acclaimed Books</p>
+          <div data-aos="fade-right" className="flex flex-col items-center bg-black p-6 rounded-lg shadow-md">
+            <p className="text-4xl font-bold text-red-600">100+</p>
+            <p className="mt-2 text-white">Internationally Acclaimed Books</p>
           </div>
-          <div data-aos="fade-left" className="flex flex-col items-center bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="text-4xl font-bold text-blue-600">500+</p>
-            <p className="mt-2 text-gray-700">Native English Writers</p>
+          <div data-aos="fade-left" className="flex flex-col items-center bg-black p-6 rounded-lg shadow-md">
+            <p className="text-4xl font-bold text-red-600">500+</p>
+            <p className="mt-2 text-white">Native English Writers</p>
           </div>
         </div>
         {/* Right Section (Content) */}

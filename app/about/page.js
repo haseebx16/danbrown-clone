@@ -37,7 +37,7 @@ const page = () => {
       >
         <div className="flex flex-col">
           <div
-            className="flex-col bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start"
+            className="flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start"
           >
             <p
               data-aos="fade-down"
@@ -55,7 +55,7 @@ const page = () => {
               </button>
               <button
                 data-aos="fade-up-left"
-                className="text-white mt-5 bg-blue-900 px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300"
+                className="text-white mt-5 bg-black px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300"
               >
                 Live Chat
               </button>

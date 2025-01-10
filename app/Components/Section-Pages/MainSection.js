@@ -35,7 +35,7 @@ const MainSection = ({ subHead, mainHead, text }) => {
           </h1>
           <h1
             data-aos="fade-up-right"
-            className="text-2xl md:text-6xl md:max-w-sm pt-2 font-bold"
+            className="text-2xl md:text-6xl md:max-w-xl pt-2 font-bold"
           >
             {mainHead}
           </h1>
