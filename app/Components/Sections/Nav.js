@@ -44,7 +44,7 @@ const Nav = () => {
           <Link href="/">
             <div className="flex items-center">
              
-              <img src="/main-logo-1.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '120px' }} />
+              <img src="/nav-logo.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '120px' }} />
             </div>
           </Link>
 
