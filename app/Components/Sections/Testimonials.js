@@ -5,6 +5,9 @@ import { font2 } from "../font/poppins";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import localFont from "next/font/local";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -39,21 +42,15 @@ const Testimonials = () => {
         },
     ];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-        );
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
     };
-
-    const handlePrevious = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-        );
-    };
-
-    const { text, name, role } = testimonials[currentIndex];
 
     return (
         <section className={`${timesNewRoman.className} mt-4 relative overflow-hidden`}>
@@ -72,39 +69,25 @@ const Testimonials = () => {
 
             {/* Testimonial Section */}
             <div className="mt-8 px-4 md:px-20 lg:px-40">
-                <div className="p-6 bg-white rounded-lg shadow-lg relative">
-                    {/* Testimonial Text */}
-                    <p data-aos="fade-up" className="text-gray-700 text-lg md:text-2xl leading-relaxed">{text}</p>
+                <Slider {...settings}>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="p-6 bg-white rounded-lg shadow-lg relative">
+                            {/* Testimonial Text */}
+                            <p data-aos="fade-up" className="text-gray-700 text-lg md:text-2xl leading-relaxed">{testimonial.text}</p>
 
-                    {/* Author Info */}
-                    <div className="flex items-center mt-6">
-                        <div className="p-2 bg-purple-700 text-white rounded-full">
-                            <i className="fas fa-quote-left text-xl"></i>
+                            {/* Author Info */}
+                            <div className="flex items-center mt-6">
+                                <div className="p-2 bg-purple-700 text-white rounded-full">
+                                    <i className="fas fa-quote-left text-xl"></i>
+                                </div>
+                                <div className="ml-4">
+                                    <p data-aos="fade-right" className="text-blue-800 font-semibold">{testimonial.name}</p>
+                                    <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="ml-4">
-                            <p data-aos="fade-right" className="text-blue-800 font-semibold">{name}</p>
-                            <p className="text-gray-500 text-sm">{role}</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Navigation Buttons */}
-                <div className="flex justify-end space-x-4 mt-4">
-                    <button
-                        data-aos="fade-right"  // AOS animation for previous button
-                        className="w-10 h-10 bg-gray-200 hover:bg-gray-300 duration-300 rounded-full shadow-lg flex items-center justify-center transform transition-transform ease-in-out"
-                        onClick={handlePrevious}
-                    >
-                        &lt;
-                    </button>
-                    <button
-                        data-aos="fade-left"  // AOS animation for next button
-                        className="w-10 h-10 bg-blue-600 hover:bg-blue-800 duration-300 text-white rounded-full shadow-lg flex items-center justify-center transform transition-transform ease-in-out"
-                        onClick={handleNext}
-                    >
-                        &gt;
-                    </button>
-                </div>
+                    ))}
+                </Slider>
             </div>
         </section>
     );
