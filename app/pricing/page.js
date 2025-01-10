@@ -8,6 +8,13 @@ import "aos/dist/aos.css";
 import Significance from '../Components/Section-Pages/Significance';
 import Footer from '../Components/Sections/Footer';
 import Testimonials from '../Components/Sections/Testimonials';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
   useEffect(() => {
@@ -19,7 +26,7 @@ const page = () => {
 
   return (
     <>
-    <div className={`${font2.className} bg-gray-50 overflow-hidden`}>
+    <div className={`${timesNewRoman.className} bg-gray-50 overflow-hidden`}>
       <MainSection
         subHead={"PRICING PLANS LIKE NEVER BEFORE"}
         mainHead={"Competitive Pricing For Our Exclusive Services"}

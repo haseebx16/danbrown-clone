@@ -8,6 +8,13 @@ import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
 
@@ -20,7 +27,7 @@ const page = () => {
 
   return (
     <>
-    <div className={`${font2.className} bg-gray-50 overflow-hidden`}>
+    <div className={`${timesNewRoman.className} bg-gray-50 overflow-hidden`}>
       <MainSection 
         subHead={"CONTACT US TODAY WE ARE NOT DIFFICULT TO REACH"} 
         mainHead={"We Love to Talk Let’s have a dialogue!"} 

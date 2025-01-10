@@ -2,10 +2,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { font2 } from "../font/poppins";
+import { font } from "../font/font";
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({ 
+  src: './times.ttf', variable: '--font-times-new-roman', display: 'swap'
+});
 
 const Hero = () => {
+
+
   return (
-    <div className={`${font2.className} relative text-black`}>
+    <div className={`${timesNewRoman.className} relative text-black`}>
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-80"></div>
 

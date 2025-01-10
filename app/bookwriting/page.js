@@ -9,6 +9,13 @@ import WritingHire from '../Components/Section-Pages/Writing-Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
 import Significance from '../Components/Section-Pages/Significance';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
 
@@ -21,7 +28,7 @@ const page = () => {
 
   return (
     <>
-    <div className={`${font2.className} overflow-hidden`}>
+    <div className={`${timesNewRoman.className} overflow-hidden`}>
       <MainSection subHead={"IT IS TIME TO HIRE A GHOSTWRITER"} mainHead={"To Get Your Book Fully Published!"}
         text={"Let’s get you started on your journey to become a successfully published writer!"}
       />

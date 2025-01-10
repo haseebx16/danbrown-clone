@@ -11,6 +11,13 @@ import AboutNumber from '../Components/Section-Pages/AboutNumber';
 import AboutBrilliant from '../Components/Section-Pages/AboutBrilliant';
 import AboutServices from '../Components/Section-Pages/AboutServices';
 import MainSection from '../Components/Section-Pages/MainSection';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
   useEffect(() => {
@@ -26,7 +33,7 @@ const page = () => {
       <AboutBrilliant/>
       <AboutServices/>
       <section
-        className={`${font2.className} md:mt-0`}
+        className={`${timesNewRoman.className} md:mt-0`}
       >
         <div className="flex flex-col">
           <div

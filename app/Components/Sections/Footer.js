@@ -5,6 +5,13 @@ import { font2 } from '../font/poppins'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Footer = () => {
 
@@ -16,7 +23,7 @@ const Footer = () => {
     }, []);
 
   return (
-    <footer className={`${font2.className} bg-blue-900 text-gray-300 mt-2 `}>
+    <footer className={`${timesNewRoman.className} bg-blue-900 text-gray-300 mt-2 `}>
     <div className="container mx-auto flex flex-wrap justify-evenly items-center space-y-6 md:space-y-0">
       {/* Logo Section */}
       <div className="flex flex-col items-start">

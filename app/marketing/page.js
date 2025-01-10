@@ -8,6 +8,13 @@ import "aos/dist/aos.css"
 import WritingHire from '../Components/Section-Pages/Writing-Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
 
@@ -20,7 +27,7 @@ const page = () => {
 
   return (
     <>
-    <div className={`${font2.className} min-h-screen overflow-hidden`}>
+    <div className={`${timesNewRoman.className} min-h-screen overflow-hidden`}>
         <MainSection subHead={"ROYALTIES AND RECOGNITION WITH"} mainHead={"Our Online Book Marketing"} text={"Our book marketing service will ensure your book is distributed and promoted properly so you can maximize your royalties and gain more recognition."}/>
         <div className={`${font2.className} flex bg-gray-50 flex-col overflow-hidden  items-center`}>
             <h1 data-aos="fade-down" className='text-3xl md:text-6xl font-bold pt-12 text-center'>Our Book Marketing Services</h1>

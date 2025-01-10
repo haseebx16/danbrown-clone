@@ -6,6 +6,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Nav from '../Sections/Nav';
 import AboutNumber from './AboutNumber';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const MainSection = ({ subHead, mainHead, text }) => {
 
@@ -20,7 +27,7 @@ const MainSection = ({ subHead, mainHead, text }) => {
     <>
         <Nav />
       <div
-        className={`${font2.className} bg-gradient-to-br from-cyan-500 to-orange-300 h-[25rem] md:h-[35rem]`}
+        className={`${timesNewRoman.classNameName} bg-gradient-to-br from-cyan-500 to-orange-300 h-[25rem] md:h-[35rem]`}
       >
         <div className="flex flex-col justify-center items-center md:items-start md:justify-start p-12 text-white">
           <h1 data-aos="fade-down" className="text-xl md:text-3xl pt-12">

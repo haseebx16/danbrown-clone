@@ -5,6 +5,13 @@ import { font2 } from '../font/poppins';
 import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
 
@@ -17,7 +24,7 @@ const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
 
   return (
     <div
-      className={`${font2.className} h-auto md:h-[39rem] bg-violet-950`}
+      className={`${timesNewRoman.className} h-auto md:h-[39rem] bg-violet-950`}
     >
       <div className="flex flex-col md:flex-row p-4 justify-center items-center">
         {/* Left Image */}

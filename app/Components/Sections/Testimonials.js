@@ -4,6 +4,13 @@ import React, { useState, useEffect } from "react";
 import { font2 } from "../font/poppins";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Testimonials = () => {
 
@@ -49,7 +56,7 @@ const Testimonials = () => {
     const { text, name, role } = testimonials[currentIndex];
 
     return (
-        <section className={`${font2.className} mt-4 relative overflow-hidden`}>
+        <section className={`${timesNewRoman.className} mt-4 relative overflow-hidden`}>
             {/* Heading */}
             <div className="flex justify-center items-center">
                 <h1 data-aos="fade-down" className="text-3xl md:text-5xl md:max-w-5xl font-bold p-4 text-center relative">

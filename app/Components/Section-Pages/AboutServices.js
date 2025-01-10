@@ -4,6 +4,13 @@ import React, { useEffect } from 'react';
 import { font2 } from '../font/poppins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const AboutServices = () => {
 
@@ -15,7 +22,7 @@ const AboutServices = () => {
     }, []);
 
   return (
-    <section className={`${font2.className} min-h-screen bg-customBeige py-10 px-4`}>
+    <section className={`${timesNewRoman.className} min-h-screen bg-customBeige py-10 px-4`}>
       <div className='flex justify-center items-center pb-16'>
         <h1 data-aos="fade-down" className='md:text-6xl hidden md:block font-bold'>
           About what we do

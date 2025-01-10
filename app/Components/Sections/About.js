@@ -3,10 +3,17 @@
 import React from 'react';
 import { font2 } from '../font/poppins';
 import { motion } from 'framer-motion';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const About = () => {
   return (
-    <div className={`${font2.className} relative bg-gray-100  text-black pt-16 pb-12`}>
+    <div className={`${timesNewRoman.className} relative bg-gray-100  text-black pt-16 pb-12`}>
       {/* Image Section */}
       <div className="md:flex items-center overflow-hidden">
         {/* Left: Image */}

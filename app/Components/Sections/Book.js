@@ -5,6 +5,13 @@ import { useEffect } from 'react';
 import { font2 } from '../font/poppins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Book = () => {
 
@@ -16,7 +23,7 @@ const Book = () => {
       }, []);
 
   return (
-    <section className={`${font2.className} bg-gray-100 h-screen md:h-[35rem] relative`}>
+    <section className={`${timesNewRoman.className} bg-gray-100 h-screen md:h-[35rem] relative`}>
         <div className="absolute top-0 left-0 mt-8 h-72 w-2 bg-purple-700 md:block hidden" />
       <div className='md:flex'>
         <div className='md:w-1/2 pt-8 md:pl-8 pl-4'>

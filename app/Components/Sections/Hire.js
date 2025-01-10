@@ -4,6 +4,13 @@ import React, { useEffect } from 'react'
 import { font2 } from '../font/poppins'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Hire = () => {
 
@@ -15,7 +22,7 @@ const Hire = () => {
     }, []);
 
   return (
-    <section className={`${font2.className} md:mt-0 mt-24`}>
+    <section className={`${timesNewRoman.className} md:mt-0 mt-24`}>
         <div className='flex flex-col'>
             <div className=' flex-col bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                 <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Get Started By Hiring Our Services And Taking The First Step To Your Ambition</p>

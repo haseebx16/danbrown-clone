@@ -4,6 +4,13 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { FaPenNib, FaBook, FaAward } from 'react-icons/fa';
 import { font2 } from '../font/poppins';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Advantages = () => {
   // Animation Variants
@@ -44,7 +51,7 @@ const Advantages = () => {
   }, [controls]);
 
   return (
-    <section ref={ref} className={`${font2.className}`}>
+    <section ref={ref} className={`${timesNewRoman.className}`}>
       <div className="w-full min-h-screen bg-customBeige">
         {/* Heading with Highlight */}
         <motion.h1

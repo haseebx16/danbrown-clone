@@ -15,6 +15,9 @@ export default {
           900: "#073b70", // Customize the blue shade
         },
       },
+      fontFamily: {
+        times: 'var(--font-times-regular)',
+      },
     },
   },
   plugins: [],

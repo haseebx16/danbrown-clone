@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-times-new-roman: 'Times New Roman', serif;
+}
+
+.font-times-new-roman {
+  font-family: var(--font-times-new-roman);
 }
 
 @media (prefers-color-scheme: dark) {

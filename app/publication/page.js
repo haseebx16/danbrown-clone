@@ -10,6 +10,13 @@ import Significance from '../Components/Section-Pages/Significance';
 import WritingHire from '../Components/Section-Pages/Writing-Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
 
@@ -22,7 +29,7 @@ const page = () => {
 
   return (
     <>
-    <div className={`${font2.className} bg-gray-100 overflow-hidden`}>
+    <div className={`${timesNewRoman.className} bg-gray-100 overflow-hidden`}>
         <MainSection subHead={"INCONVENIENCE-FREE ONLINE"} mainHead={"Publication & Printing Services for Your Book"}
             text={""}
         />

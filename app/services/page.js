@@ -8,6 +8,13 @@ import "aos/dist/aos.css";
 // import Hire from '../Components/Sections/Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const page = () => {
 
@@ -20,10 +27,10 @@ const page = () => {
 
   return (
     <>
-    <div className={` ${font2.className} relative overflow-hidden`}>
+    <div className={` ${timesNewRoman.className} relative overflow-hidden`}>
       <MainSection subHead="SAVE YOUR TIME AND EFFORT BY GOING FOR" mainHead="Our Ghostwriting Services
       " text="It’s time for you to get your job done efficiently and professionally by hiring our ghostwriting services."/>
-      <div className={`${font2.className} flex flex-col justify-center relative items-center`}>
+      <div className={`${timesNewRoman.className} flex flex-col justify-center relative items-center`}>
         <h1 data-aos="fade-right" className='text-center text-3xl md:text-6xl p-12 font-bold'>
         <span
             className="absolute inset-0 bg-yellow-100 h-[1%] md:h-[1%] top-[2%] md:top-[3%] z-0"

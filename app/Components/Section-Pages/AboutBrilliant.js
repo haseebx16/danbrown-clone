@@ -4,6 +4,13 @@ import React, { useEffect } from 'react';
 import { font2 } from '../font/poppins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const AboutBrilliant = () => {
 
@@ -15,7 +22,7 @@ const AboutBrilliant = () => {
       }, []);
 
   return (
-    <div className={` ${font2.className} bg-white py-10 relative px-4 sm:px-6 lg:px-8`}>
+    <div className={` ${timesNewRoman.className} bg-white py-10 relative px-4 sm:px-6 lg:px-8`}>
       <div className="text-center">
         <h2 data-aos="fade-right" className="text-3xl md:text-6xl font-bold text-gray-900 sm:text-4xl">
           <span

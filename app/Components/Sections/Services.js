@@ -4,6 +4,13 @@ import React, { useEffect } from 'react';
 import { font2 } from '../font/poppins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Services = () => {
   useEffect(() => {
@@ -14,7 +21,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className={`${font2.className} bg-gray-100 min-h-screen overflow-hidden`}>
+    <section className={`${timesNewRoman.className} bg-gray-100 min-h-screen overflow-hidden`}>
       <div className='flex flex-col md:justify-center justify-start items-start md:p-12 pt-4 pl-3 md:items-center'>
         <h1 className='md:text-5xl text-2xl font-bold text-left md:text-center'>
           A wide range of ghostwriting services For you to avail and becoming a published author!

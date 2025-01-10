@@ -5,6 +5,13 @@ import navLinks from "../data/navLinks";
 import { font2 } from "../font/poppins";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import localFont from "next/font/local";
+
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +38,7 @@ const Nav = () => {
   return (
     <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
       <header
-        className={`${font2.className} w-screen bg-darkGrey bg-opacity-90 py-0 text-black`}
+        className={`${timesNewRoman.className} w-screen bg-darkGrey bg-opacity-90 py-0 text-black`}
       >
         <nav className="flex items-center justify-between h-full px-8">
           <Link href="/">
