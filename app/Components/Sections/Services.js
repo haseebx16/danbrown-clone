@@ -40,7 +40,7 @@ const Services = () => {
             className='md:block hidden w-[40rem] h-[25rem]'
             alt="Ghostwriting Services"
           />
-          <div className='py-8 md:w-[37rem] w-screen h-[12rem] md:ml-10 px-8 bg-violet-800 text-white'>
+          <div className='py-8 md:w-[37rem] w-screen h-[12rem] md:ml-10 px-8 bg-black text-white'>
             <p className='text-3xl'>Book Editing</p>
             <p className='text-md mt-2'>
               We have a team of editors who are going to scrutinize your manuscript for errors while also offering stylistic changes to the overall tone and readability of your book.
@@ -52,13 +52,13 @@ const Services = () => {
           className='md:w-1/2 md:mt-0'
           data-aos='fade-right'
         >
-          <div className='py-4 md:py-8 md:w-[37rem] w-screen h-[10rem] px-8 bg-blue-800 text-white'>
+          <div className='py-4 md:py-8 md:w-[37rem] w-screen h-[10rem] px-8 bg-red-700 text-white'>
             <p className='text-3xl'>Ghost Writing</p>
             <p className='text-md mt-2'>
               We have a team of professional writers, each specializing in a particular niche, who will take your idea/story and turn it into a written masterpiece!
             </p>
           </div>
-          <div className='py-8 px-8 md:w-[37rem] w-screen h-[10rem] bg-blue-900 text-white'>
+          <div className='py-8 px-8 md:w-[37rem] w-screen h-[10rem] bg-black text-white'>
             <p className='text-3xl'>Publication & Printing</p>
             <p className='text-md mt-2'>
               Forget about the troubles and hassles of publishing your book through a publishing agency. Let us take care of that for you too!
@@ -66,7 +66,7 @@ const Services = () => {
           </div>
           <div className='flex flex-col md:flex-row'>
             <div
-              className='py-8 md:h-[17rem] h-[13rem] md:w-[19rem] w-screen px-8 bg-cyan-500 text-white'
+              className='py-8 md:h-[17rem] h-[13rem] md:w-[19rem] w-screen px-8 bg-red-700 text-white'
               data-aos='fade-left' 
             >
               <p className='text-3xl'>Book Marketing</p>
@@ -75,7 +75,7 @@ const Services = () => {
               </p>
             </div>
             <div
-              className='py-8 md:h-[17rem] h-[15rem] md:w-[18rem] w-screen px-8 bg-cyan-600 text-white'
+              className='py-8 md:h-[17rem] h-[15rem] md:w-[18rem] w-screen px-8 bg-black text-white'
               data-aos='fade-up-right'
             >
               <p className='md:text-2xl text-3xl'>Formatting & Proofreading</p>
