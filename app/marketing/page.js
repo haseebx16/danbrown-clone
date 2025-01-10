@@ -92,9 +92,9 @@ const page = () => {
                 </div>
             </div>
           </div>
-          <section className={`${font2.className} md:mt-0 mt-24 `}>
+          <section className={`${font2.className} md:mt-0 mt-24 md:mb-24`}>
                   <div className='flex flex-col'>
-                      <div className=' flex-col bg-gradient-to-b from-blue-900 via-pink-700 to-violet-950 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
+                      <div className=' flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                           <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Let Us Promote Your Book For You Through Our Marketing Strategies</p>
                           <div className='flex flex-row md:mt-4 space-x-4'>
                               <button data-aos="fade-up-right" className='text-black mt-5 bg-white px-4 py-2 rounded-md hover:bg-black hover:text-white duration-300'>Let's Get Started</button>

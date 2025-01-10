@@ -41,7 +41,7 @@ const page = () => {
 
       <div className="grid grid-cols-1 md:p-24 md:pt-8 bg-gray-50 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-12">
         {/* Plan 1 */}
-        <div className="py-8 flex flex-col justify-center items-center border-2 border-blue-600 bg-white rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="py-8 flex flex-col justify-center items-center border-2 border-red-600 bg-white rounded-lg shadow-lg" data-aos="fade-up">
             <h2 className="text-3xl font-bold text-center">Basic Plan</h2>
             <p className='text-2xl font-light text-center'>50% Off !</p>
             <p className="text-gray-600 mt-4">Ideal for individuals just starting out.</p>
@@ -56,13 +56,13 @@ const page = () => {
                 <p className='text-gray-600 text-left'>&#8226; Unlimited Revisions</p>
             </div>
 
-            <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+            <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
             <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-            <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+            <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
             </div>
 
             {/* Plan 2 */}
-            <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-cyan-600 rounded-lg shadow-lg" data-aos="fade-up">
+            <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-black rounded-lg shadow-lg" data-aos="fade-up">
             <h2 className="text-3xl font-bold text-center">Startup Package</h2>
             <p className='text-2xl font-light text-center'>50% Off !</p>
             <p className="text-gray-600 mt-4">Perfect for small teams or projects.</p>
@@ -80,14 +80,14 @@ const page = () => {
                 <p className='text-gray-600 text-left'>&#8226; Publication</p>
             </div>
 
-            <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+            <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
             <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-            <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+            <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
             </div>
 
         {/* Plan 3 */}
         {/* Plan 3 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-violet-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-red-600 rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center">Standard Package</h2>
         <p className='text-2xl font-light text-center'>50% Off !</p>
         <p className="text-gray-600 mt-4">Best for established businesses.</p>
@@ -105,13 +105,13 @@ const page = () => {
             <p className='text-gray-600 text-left'>&#8226; Publication on Amazon & Kindle</p>
         </div>
         
-        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
         <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
 {/* Plan 4 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-pink-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-black rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center">Professional Package</h2>
         <p className='text-2xl font-light text-center'>50% Off !</p>
         <p className="text-gray-600 mt-4">Tailored solutions for large organizations.</p>
@@ -131,13 +131,13 @@ const page = () => {
             <p className='text-gray-600 text-left'>&#8226; 1-Year Hosting & Domain</p>
         </div>
         
-        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
         <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
         {/* Plan 5 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-yellow-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-red-600 rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center">Expert Package</h2>
         <p className='text-2xl font-light text-center'>50% Off !</p>
         <p className="text-gray-600 mt-4">Comprehensive plan for businesses.</p>
@@ -159,13 +159,13 @@ const page = () => {
             <p className='text-gray-600 text-left'>&#8226; 30-60 Seconds Book Video Trailer</p>
         </div>
         
-        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
         <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
         {/* Plan 6 */}
-        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-green-600 rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="py-8 flex flex-col justify-center items-center bg-white border-2 border-black rounded-lg shadow-lg" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center">Best-Seller Package</h2>
         <p className='text-2xl font-light text-center'>50% Off !</p>
         <p className="text-gray-600 mt-4">Full-suite services for large-scale operations.</p>
@@ -188,16 +188,16 @@ const page = () => {
             <p className='text-gray-600 text-left'>&#8226; Book Marketing (Advanced Marketing)</p>
         </div>
         
-        <hr className='text-gray-600 border border-1 border-gray-400 mt-8 w-full'/>
+        <hr className='text-gray-600 border border-2 border-gray-400 mt-8 w-full'/>
         <p className='text-gray-700 text-xl text-center mt-4'>20% More Off On the Next Package !</p>
-        <button className='bg-blue-900 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
+        <button className='bg-red-700 text-white uppercase font-bold text-md px-7 mt-3 py-2 hover:border hover:border-black hover:bg-transparent hover:text-black duration-300'>Buy Now</button>
         </div>
 
       </div>
       <Significance/>
       <section className={`${font2.className} md:mt-0 mt-24`}>
               <div className='flex flex-col'>
-                  <div className=' flex-col bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
+                  <div className=' flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                       <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Get Started By Hiring Our Services And Taking The First Step To Your Ambition</p>
                       <div className='flex flex-row md:mt-4 space-x-4'>
                           <button data-aos="fade-up-right" className='text-black mt-5 bg-white px-4 py-2 rounded-md hover:bg-black hover:text-white duration-300'>Let's Get Started</button>

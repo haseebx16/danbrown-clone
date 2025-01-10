@@ -40,20 +40,20 @@ const page = () => {
             </p>
             <h1 data-aos="fade-up" className='text-3xl md:text-5xl max-w-md font-bold mt-4'>Sell Your Content With YOUR NAME Following</h1>
             <p data-aos="fade-down" className='font-normal text-lg text-left mt-4 text-gray-500'>BOOK PUBLISHING SERVICES WITHOUT STRUGGLE AND HASSLE</p>
-            <p data-aos="fade-up" className='font-bold text-xl md:mt-16 mt-4 text-left text-blue-800 '>BOOK PUBLISHING SERVICES INCLUDE:</p>
+            <p data-aos="fade-up" className='font-bold text-xl md:mt-16 mt-4 text-left text-red-600 '>BOOK PUBLISHING SERVICES INCLUDE:</p>
             <div data-aos="fade-left">
-              <p className='font-bold text-md text-left text-blue-800 mt-4'>&#8226;&nbsp;<span className='text-gray-500'>Browsing the top most reliable options</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>Providing Consultancy</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>Designing a cover for your book</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>Proofreading, Typesetting, Formatting including eBook</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>ISBN acquisition</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>Copyright </span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>EBOOK CREATION AND DISTRIBUTION</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>PAPERBACK DISTRIBUTIONMARKETING CONSULTATION</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>INTERIOR LAYOUT </span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>OPTIONAL HARDCOVER PRINTING & MANAGEMENT</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>AUTHOR MARKETING MATERIALS</span></p>
-              <p className='font-bold text-md text-left text-blue-800'>&#8226;&nbsp;<span className='text-gray-500'>FULL EVALUATION EDITPUBLISHING IMPRINT CREATION</span></p>
+              <p className='font-bold text-md text-left text-red-600 mt-4'>&#8226;&nbsp;<span className='text-gray-500'>Browsing the top most reliable options</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>Providing Consultancy</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>Designing a cover for your book</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>Proofreading, Typesetting, Formatting including eBook</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>ISBN acquisition</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>Copyright </span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>EBOOK CREATION AND DISTRIBUTION</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>PAPERBACK DISTRIBUTIONMARKETING CONSULTATION</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>INTERIOR LAYOUT </span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>OPTIONAL HARDCOVER PRINTING & MANAGEMENT</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>AUTHOR MARKETING MATERIALS</span></p>
+              <p className='font-bold text-md text-left text-red-600'>&#8226;&nbsp;<span className='text-gray-500'>FULL EVALUATION EDITPUBLISHING IMPRINT CREATION</span></p>
             </div>
           </div>
           <div data-aos="flip-right" className='md:w-1/2 flex justify-center'>
@@ -62,11 +62,11 @@ const page = () => {
         </div>
         <section className={`${font2.className} md:mt-0 mt-24`}>
                 <div className='flex flex-col'>
-                    <div className=' flex-col bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
+                    <div className=' flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                         <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Get Started By Hiring Our Services And Taking The First Step To Your Ambition</p>
                         <div className='flex flex-row md:mt-4 space-x-4'>
                             <button data-aos="fade-up-right" className='text-black mt-5 bg-white px-4 py-2 rounded-md hover:bg-black hover:text-white duration-300'>Let's Get Started</button>
-                            <button data-aos="fade-up-left" className='text-white mt-5 bg-blue-900 px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300'>Live Chat</button>
+                            <button data-aos="fade-up-left" className='text-white mt-5 bg-black px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300'>Live Chat</button>
                         </div>
                     </div>
                 </div>
