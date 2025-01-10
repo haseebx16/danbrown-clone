@@ -43,7 +43,7 @@ const page = () => {
         <div className='flex flex-col md:space-x-8 md:flex-row justify-center items-center'>
           <img data-aos="fade-right" src='/ag1.png' className='w-96 h-80' />
           <div className='flex flex-col justify-start items-start p-2'>
-            <h1 data-aos="fade-left" className='text-3xl md:text-5xl mt-6 md:max-w-xl text-left'>Professional <span className='text-blue-500'>Ghostwriting</span> Services</h1>
+            <h1 data-aos="fade-left" className='text-3xl md:text-5xl mt-6 md:max-w-xl text-left'>Professional <span className='text-red-600'>Ghostwriting</span> Services</h1>
             <p data-aos="fade-up" className='text-gray-500 md:max-w-xl mt-4 text-left'>
               With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
             </p>
@@ -58,7 +58,7 @@ const page = () => {
         <div className='flex flex-col md:flex-row-reverse md:space-x-8 justify-center items-center mt-8'>
           <img src='/ag3.png' className='w-96 h-80'/>
           <div className='flex flex-col justify-start items-start p-2'>
-              <h1 data-aos="fade-right" className='text-3xl md:text-5xl mt-6'>Book <span className='text-blue-500'>Cover</span> Designs</h1>
+              <h1 data-aos="fade-right" className='text-3xl md:text-5xl mt-6'>Book <span className='text-red-600'>Cover</span> Designs</h1>
               <p data-aos="fade-left" className='text-gray-500 md:max-w-xl mt-4'>
                 With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
@@ -73,7 +73,7 @@ const page = () => {
         <div className='flex flex-col md:flex-row md:space-x-8 justify-center items-center mt-8'>
           <img data-aos="fade-right" src='/ag2.png' className='w-96 h-80'/>
           <div className='flex flex-col justify-start items-start p-2'>
-              <h1 data-aos="fade-left"  className='text-3xl md:max-w-lg md:text-5xl mt-6'>Book  <span className='text-blue-500'>Publishing</span> Services</h1>
+              <h1 data-aos="fade-left"  className='text-3xl md:max-w-lg md:text-5xl mt-6'>Book  <span className='text-red-600'>Publishing</span> Services</h1>
               <p data-aos="fade-down" className='text-gray-500 md:max-w-xl mt-4'>
                 With Stephen King Academy, you get only the most Stephen King Academy service on the face of the earth! Our ghostwriters are talented writers and each has their own niche that they specialize in, covering all genres and all kinds of books.
               </p>
@@ -91,7 +91,7 @@ const page = () => {
             >
               <div className="flex flex-col">
                 <div
-                  className="flex-col bg-gradient-to-b from-blue-900 via-blue-700 to-sky-500 p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start"
+                  className="flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start"
                 >
                   <p
                     data-aos="fade-down"
@@ -109,7 +109,7 @@ const page = () => {
                     </button>
                     <button
                       data-aos="fade-up-left"
-                      className="text-white mt-5 bg-blue-900 px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300"
+                      className="text-white mt-5 bg-black px-4 py-2 rounded-md hover:bg-white hover:text-black duration-300"
                     >
                       Live Chat
                     </button>
