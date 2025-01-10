@@ -66,7 +66,7 @@ export default function Portfolio() {
 
   const books = [
     { id: 1, src: '/it-hd.png', title: "IT The Novel" },
-    { id: 2, src: '/Carriee.png', title: "Carrie" },
+    { id: 2, src: '/Carriee-min.png', title: "Carrie" },
     { id: 3, src: '/end.png', title: "End Of Watch" },
     { id: 4, src: '/green.png', title: "The Green Mile" },
     { id: 5, src: '/dr.png', title: "Doctor Sleep" },
