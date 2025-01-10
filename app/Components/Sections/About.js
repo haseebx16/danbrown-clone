@@ -45,8 +45,8 @@ const About = () => {
             It’s a great service to avail, especially for those too busy to write their own books but have concepts, ideas, or personal experiences to share with the rest of the world (such as celebrities or entrepreneurs). Ghostwriting is also really useful to aspiring writers suffering from writer’s block or those who have stories to tell but aren’t confident in their ability to write it down.
           </p>
           <div className="flex space-x-4">
-            <button className="bg-violet-700 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Contact Our Expert!</button>
-            <button className="bg-sky-900 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Live Chat</button>
+            <button className="bg-red-700 hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Contact Our Expert!</button>
+            <button className="bg-black hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Live Chat</button>
           </div>
         </motion.div>
       </div>

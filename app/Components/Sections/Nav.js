@@ -125,7 +125,7 @@ const Nav = () => {
                       key={item.label}
                       whileHover={{ scale: 1.05 }}
                       className={`${
-                        activeLink === item.href ? "border-b-2 border-cyan-900" : ""
+                        activeLink === item.href ? "border-b-2 border-red-600" : ""
                       } text-black block py-4 font-bold text-xl cursor-pointer`}
                     >
                       <Link href={item.href}>{item.label}</Link>
@@ -159,14 +159,14 @@ const Nav = () => {
                   whileHover={{ scale: 1.1, originX: 0 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className={`${
-                    activeLink === item.href ? "border-b-2 border-cyan-400" : ""
-                  } block text-md font-medium cursor-pointer hover:border-b-2 hover:border-cyan-400`}
+                    activeLink === item.href ? "border-b-2 border-red-600" : ""
+                  } block text-md font-medium cursor-pointer hover:border-b-2 hover:border-red-600`}
                 >
                   <Link href={item.href}>{item.label}</Link>
                 </motion.span>
               </div>
             ))}
-            <button className="px-3 py-2 bg-violet-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+            <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
               Contact Our Experts!
             </button>
           </motion.div>

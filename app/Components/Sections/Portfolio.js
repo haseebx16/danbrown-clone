@@ -65,11 +65,11 @@ export default function Portfolio() {
   };
 
   const books = [
-    { id: 1, src: '/it.jpg', title: "IT The Novel" },
-    { id: 2, src: '/carrie.jpg', title: "Carrie" },
-    { id: 3, src: '/1408.jpg', title: "1408" },
-    { id: 4, src: '/lot.jpg', title: "'Salem's Lot" },
-    { id: 5, src: '/the-stand.jpg', title: "The Stand" },
+    { id: 1, src: '/it-hd.png', title: "IT The Novel" },
+    { id: 2, src: '/Carriee.png', title: "Carrie" },
+    { id: 3, src: '/end.png', title: "End Of Watch" },
+    { id: 4, src: '/green.png', title: "The Green Mile" },
+    { id: 5, src: '/dr.png', title: "Doctor Sleep" },
     { id: 6, src: '/the-shining.jpg', title: "The Shining" },
   ];
 
@@ -77,7 +77,7 @@ export default function Portfolio() {
     <section className={`${timesNewRoman.className} py-20 bg-white`}>
       <div className="max-w-[1400px] mx-auto px-12">
         <h2 className="text-5xl  text-center mb-12 text-black font-bold">
-          OUR PORTFOLIO<span className="text-black">.</span>
+          OUR PORTFOLIO<span className="text-red-700">.</span>
         </h2>
         
         <div className="relative px-8">

@@ -23,7 +23,7 @@ const Footer = () => {
     }, []);
 
   return (
-    <footer className={`${timesNewRoman.className} bg-blue-900 text-gray-300 mt-2 `}>
+    <footer className={`${timesNewRoman.className} bg-red-800 text-white mt-2 `}>
     <div className="container mx-auto flex flex-wrap justify-evenly items-center space-y-6 md:space-y-0">
       {/* Logo Section */}
       <div className="flex flex-col items-start">

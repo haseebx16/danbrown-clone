@@ -77,7 +77,7 @@ const Advantages = () => {
         Is writing a viable career? In short, yes! But it takes very strong writing skills to stand out among the countless aspiring online writers out there. It also takes a lot of hard work and dependability, along with a humble attitude. Stephen King Academy is here to alleviate the hard work aspect of becoming a writer so you can enjoy the benefits of receiving royalties, recognition, and credibility with your stories and your ideas. The world deserves to know what you have to share!
         </p>
         <div className="">
-          <button className="px-12 py-2 bg-purple-700 text-xl mt-8 hover:bg-white hover:text-black duration-300 text-white font-bold">Let's Get Started</button>
+          <button className="px-12 py-2 bg-red-700 text-xl mt-8 hover:bg-white hover:text-black duration-300 text-white font-bold">Let's Get Started</button>
         </div>
               </motion.div>
     </div>

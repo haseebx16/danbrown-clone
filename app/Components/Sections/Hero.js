@@ -44,14 +44,14 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            className="bg-violet-700 font-bold uppercase px-4 py-2 tracking-widest"
+            className="bg-red-700 font-bold uppercase px-4 py-2 tracking-widest"
           >
             Let's get started
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            className="bg-sky-900 font-bold uppercase px-4 py-2 tracking-widest"
+            className="bg-white text-black font-bold uppercase px-4 py-2 tracking-widest"
           >
             Live Chat
           </motion.button>
