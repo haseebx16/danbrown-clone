@@ -8,24 +8,35 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
 
       - name: Deploy to StackCP via SSH
         uses: appleboy/ssh-action@master
         with:
-          host: ssh.us.stackcp.com 
-          username: stephenkingacademy.com 
+          host: ssh.us.stackcp.com
+          username: stephenkingacademy.com
           key: ${{ secrets.STACKCP_PRIVATE_KEY }}
-          port: 22 
+          port: 22
           script: |
-            cd /home/stephenkingacademy.com/public_html
+            cd public_html
             rm -rf *
             mkdir -p .next
             rsync -avz .next ./
             rsync -avz public ./
             rsync -avz package.json ./
-            rsync -avz next.config.js ./
+                        rsync -avz next.config.js ./
             npm install --omit=dev
             pm2 restart all # Or your start command
