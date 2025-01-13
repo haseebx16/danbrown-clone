@@ -69,8 +69,8 @@ export default function Portfolio() {
     { id: 2, src: '/Carriee-min.png', title: "Carrie" },
     { id: 3, src: '/end.png', title: "End Of Watch" },
     { id: 4, src: '/green.png', title: "The Green Mile" },
-    { id: 5, src: '/dr.png', title: "Doctor Sleep" },
-    { id: 6, src: '/the-shining.jpg', title: "The Shining" },
+    { id: 5, src: '/dallas.png', title: "Dallas '63" },
+    { id: 6, src: '/crew.png', title: "Skeleton Crew" },
   ];
 
   return (
