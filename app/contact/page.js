@@ -30,7 +30,7 @@ const page = () => {
     <div className={`${timesNewRoman.className} bg-gray-50 overflow-hidden`}>
       <MainSection 
         subHead={"CONTACT US TODAY WE ARE NOT DIFFICULT TO REACH"} 
-        mainHead={"We Love to Talk Let’s have a dialogue!"} 
+        mainHead={"We Love to Talk Let’s have a dialogue..."} 
         text={"Contact us let's work together and produce awesome books"} 
       />
 
