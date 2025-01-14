@@ -32,8 +32,8 @@ jobs:
           port: 22
           script: |
             cd public_html
-            rm -rf _next public # Clean up existing folders (important)
-            rsync -avzv ../.next/ ./_next/ # Sync .next folder
-            rsync -avzv ../public/ ./public/ # Sync public folder
-            echo "Deployment complete. Ready to restart PM2." # Logging
-            pm2 restart all # Or your PM2 start command
+            rm -rf _next public # Clean up existing folders
+            rsync -avzv $GITHUB_WORKSPACE/.next/ ./_next/ # Correct path for .next
+            rsync -avzv $GITHUB_WORKSPACE/public/ ./public/ # Correct path for public
+            echo "Deployment complete. Ready to restart PM2."
+            pm2 restart all
