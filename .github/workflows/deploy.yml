@@ -23,6 +23,9 @@ jobs:
       - name: Build Next.js app
         run: npm run build  # This generates the static files and assets
 
+      - name: Check contents of out directory
+        run: ls -al $GITHUB_WORKSPACE/out
+
       - name: Deploy to StackCP via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -37,3 +40,7 @@ jobs:
             echo "Syncing out folder contents"
             rsync -avz $GITHUB_WORKSPACE/out/* stephenkingacademy.com@ssh.us.stackcp.com:~/public_html/
             echo "Deployment complete."
+
+      - name: Check remote public_html contents
+        run: |
+          ssh -i ${{ secrets.STACKCP_PRIVATE_KEY }} stephenkingacademy.com@ssh.us.stackcp.com 'ls -al ~/public_html'
