@@ -30,15 +30,11 @@ jobs:
           username: stephenkingacademy.com
           key: ${{ secrets.STACKCP_PRIVATE_KEY }}
           port: 22
-          script: |
-            cd public_html
-            rm -rf _next public # Remove old files in public_html
-            echo "Deployment complete. Ready to restart PM2."
-            pm2 restart all
           rsync: true
           source: ./.next/
-          target: public_html/.next/ # Correct: Inside public_html
-      - uses: appleboy/ssh-action@master
+          target: public_html/.next/
+      - name: Deploy public folder
+        uses: appleboy/ssh-action@master
         with:
           host: ssh.us.stackcp.com
           username: stephenkingacademy.com
@@ -46,4 +42,4 @@ jobs:
           port: 22
           rsync: true
           source: ./public/
-          target: public_html/public/ # Correct: Inside public_html
+          target: public_html/public/
