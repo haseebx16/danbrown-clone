@@ -35,5 +35,5 @@ jobs:
             cd public_html
             rm -rf *  # Ensure all old files are removed
             echo "Syncing out folder contents"
-            rsync -avzvv $GITHUB_WORKSPACE/out/ ./  # Sync out folder with verbose logging
+            rsync -avz $GITHUB_WORKSPACE/out/* stephenkingacademy.com@ssh.us.stackcp.com:~/public_html/
             echo "Deployment complete."
