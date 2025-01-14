@@ -23,6 +23,9 @@ jobs:
       - name: Build Next.js app
         run: npm run build
 
+      - name: List files before rsync
+        run: ls -al .next && ls -al public # Check if the directories exist and have content
+
       - name: Deploy to StackCP via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -32,10 +35,14 @@ jobs:
           port: 22
           script: |
             cd public_html
-            rm -rf *
-            mkdir -p .next
-            rsync -avz .next ./
-            rsync -avz public ./
+            pwd # Print the current working directory on the server
+            ls -al # List files in public_html before rsync
+            rm -rf _next public
+            rsync -avzv .next ./ # VERY VERBOSE rsync
+            rsync -avzv public ./ # VERY VERBOSE rsync
+            ls -al # List files in public_html after rsync
             echo "Deployment complete. Ready to restart PM2."
-            npm install --omit=dev
             pm2 restart all # Or your start command
+
+      - name: List files after deployment
+        run: ssh stephenkingacademy.com@ssh.us.stackcp.com -p 22 -i ${{ secrets.STACKCP_PRIVATE_KEY }} "ls -al public_html"
