@@ -15,25 +15,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: '18'  # Recommended stable version for Next.js
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Next.js app
-        run: npm run build
+        run: npm run build  # This generates the static files and assets
 
       - name: Deploy to StackCP via SSH
         uses: appleboy/ssh-action@master
         with:
           host: ssh.us.stackcp.com
-          username: stephenkingacademy.com
+          username: stephenkingacademy.com  # Adjust this with your actual username
           key: ${{ secrets.STACKCP_PRIVATE_KEY }}
           port: 22
           script: |
             cd public_html
-            rm -rf _next public # Clean up existing folders
-            rsync -avzv $GITHUB_WORKSPACE/.next/ ./_next/ # Correct path for .next
-            rsync -avzv $GITHUB_WORKSPACE/public/ ./public/ # Correct path for public
+            rm -rf _next public out # Clean up existing folders
+            rsync -avzv $GITHUB_WORKSPACE/.next/ ./_next/  # Sync .next folder
+            rsync -avzv $GITHUB_WORKSPACE/public/ ./public/  # Sync public folder
+            rsync -avzv $GITHUB_WORKSPACE/out/ ./out/  # Sync the out folder with all assets (images, files, etc.)
             echo "Deployment complete. Ready to restart PM2."
-            pm2 restart all
+            pm2 restart all  # Ensure PM2 is running and configured correctly on the server
