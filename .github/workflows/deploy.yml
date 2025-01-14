@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Recommended stable version for Next.js
+          node-version: '18'
 
       - name: Install dependencies
         run: npm ci
@@ -27,12 +27,13 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ssh.us.stackcp.com
-          username: stephenkingacademy.com  # Adjust this with your actual username
+          username: stephenkingacademy.com
           key: ${{ secrets.STACKCP_PRIVATE_KEY }}
           port: 22
           script: |
+            echo "Cleaning up public_html directory"
             cd public_html
-            rm -rf *
-            rsync -avzv $GITHUB_WORKSPACE/out/ ./out/
-            echo "Deployment complete. Ready to restart PM2."
-            pm2 restart all
+            rm -rf *  # Ensure all old files are removed
+            echo "Syncing out folder contents"
+            rsync -avzvv $GITHUB_WORKSPACE/out/ ./  # Sync out folder with verbose logging
+            echo "Deployment complete."
