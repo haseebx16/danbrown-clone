@@ -32,7 +32,7 @@ const Hero = () => {
         className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
       >
         <h1 className="text-md md:text-3xl font-bold uppercase leading-relaxed">
-          Manifest Your <br /> Concept Through Ghost Writing
+          Manifest Your <br /> Concepts Through Ghost Writing
         </h1>
         <p className="text-3xl md:text-8xl font-bold leading-tight mt-4">
           You Conceive We <br /> Construct Your Book

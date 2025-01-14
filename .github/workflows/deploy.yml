@@ -36,7 +36,6 @@ jobs:
             mkdir -p .next
             rsync -avz .next ./
             rsync -avz public ./
-            rsync -avz package.json ./
-                        rsync -avz next.config.js ./
+            echo "Deployment complete. Ready to restart PM2."
             npm install --omit=dev
             pm2 restart all # Or your start command
