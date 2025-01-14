@@ -30,16 +30,10 @@ jobs:
           username: stephenkingacademy.com
           key: ${{ secrets.STACKCP_PRIVATE_KEY }}
           port: 22
-          rsync: true
-          source: ./.next/
-          target: public_html/.next/
-      - name: Deploy public folder
-        uses: appleboy/ssh-action@master
-        with:
-          host: ssh.us.stackcp.com
-          username: stephenkingacademy.com
-          key: ${{ secrets.STACKCP_PRIVATE_KEY }}
-          port: 22
-          rsync: true
-          source: ./public/
-          target: public_html/public/
+          script: |
+            cd public_html
+            rm -rf _next public # Clean up existing folders (important)
+            rsync -avzv ../.next/ ./_next/ # Sync .next folder
+            rsync -avzv ../public/ ./public/ # Sync public folder
+            echo "Deployment complete. Ready to restart PM2." # Logging
+            pm2 restart all # Or your PM2 start command
