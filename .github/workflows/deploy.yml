@@ -24,10 +24,11 @@ jobs:
         run: npm run build  # This generates the static files and assets
 
       - name: Check contents of out directory
-        run: ls -al $GITHUB_WORKSPACE/out
+        run: ls -al $GITHUB_WORKSPACE/out    
 
-      - name: Output the private key path
-        run: echo "Using SSH Key ${{ secrets.STACKCP_PRIVATE_KEY }}"
+      - name: Check remote public_html contents
+        run: |
+          ssh -i ${{ secrets.STACKCP_PRIVATE_KEY }} stephenkingacademy.com@ssh.us.stackcp.com 'ls -al ~/public_html'
 
       - name: Deploy to StackCP via SSH
         uses: appleboy/ssh-action@master
@@ -46,8 +47,4 @@ jobs:
 
       - name: Check remote public_html contents
         run: |
-          echo "${{ secrets.STACKCP_PRIVATE_KEY }}" > private_key.pem
-          chmod 600 private_key.pem
-          ssh -i private_key.pem stephenkingacademy.com@ssh.us.stackcp.com 'ls -al ~/public_html'
-
-        
+          ssh -i ${{ secrets.STACKCP_PRIVATE_KEY }} stephenkingacademy.com@ssh.us.stackcp.com 'ls -al ~/public_html'
