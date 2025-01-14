@@ -32,9 +32,7 @@ jobs:
           port: 22
           script: |
             cd public_html
-            rm -rf _next public out # Clean up existing folders
-            rsync -avzv $GITHUB_WORKSPACE/.next/ ./_next/  # Sync .next folder
-            rsync -avzv $GITHUB_WORKSPACE/public/ ./public/  # Sync public folder
-            rsync -avzv $GITHUB_WORKSPACE/out/ ./out/  # Sync the out folder with all assets (images, files, etc.)
+            rm -rf *
+            rsync -avzv $GITHUB_WORKSPACE/out/ ./out/
             echo "Deployment complete. Ready to restart PM2."
-            pm2 restart all  # Ensure PM2 is running and configured correctly on the server
+            pm2 restart all
