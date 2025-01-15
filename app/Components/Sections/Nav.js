@@ -37,8 +37,8 @@ const Nav = () => {
 
   return (
     <>
-    <div className="py-4 w-full bg-gradient-to-br from-red-800 to-black">
-        <p className="text-white">support@stephenkingacademy.com</p>
+    <div className="py-2 w-full flex justify-center items-end bg-gradient-to-br from-red-800 to-black">
+        <p className="text-white text-right">support@stephenkingacademy.com</p>
     </div>
     <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
       <header
