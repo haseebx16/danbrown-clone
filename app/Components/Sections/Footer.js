@@ -45,8 +45,8 @@ const Footer = () => {
         <ul className="space-y-2 p-4 md:p-0 text-lg">
           <Link href={"/services"}><li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Services</li></Link>
           <Link href={"/bookwriting"}><li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Book Writing</li></Link>
-          <Link href={"/publication"}><li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>Writing Publication</li></Link>
-          <Link href={"/marketing"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Writing Marketing</li></Link>
+          <Link href={"/publication"}><li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>Publication</li></Link>
+          <Link href={"/marketing"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Marketing</li></Link>
         </ul>
 
         {/* Contact Info */}
