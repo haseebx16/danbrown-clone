@@ -97,7 +97,7 @@ const Nav = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: "-100%", opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex flex-col items-center justify-center h-screen text-white fixed inset-0 bg-gradient-to-br from-red-800 to-black z-50 md:hidden"
+                className="flex flex-col items-center justify-center h-screen text-white fixed inset-0 bg-gradient-to-br from-black to-red-800 z-50 md:hidden"
               >
                 <div className="absolute top-0 left-0 p-4">
                   
