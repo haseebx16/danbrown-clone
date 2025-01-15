@@ -97,7 +97,7 @@ const Nav = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: "-100%", opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="flex flex-col items-center justify-center h-screen fixed inset-0 bg-gradient-to-br from-cyan-400 to-orange-300 z-50 md:hidden"
+                className="flex flex-col items-center justify-center h-screen text-white fixed inset-0 bg-gradient-to-br from-red-800 to-black z-50 md:hidden"
               >
                 <div className="absolute top-0 left-0 p-4">
                   
@@ -105,7 +105,7 @@ const Nav = () => {
                 </div>
 
                 <div className="absolute top-0 right-0 p-4">
-                  <button onClick={toggleMenu} className="text-black focus:outline-none">
+                  <button onClick={toggleMenu} className="text-white focus:outline-none">
                     <svg
                       className="w-6 h-6"
                       fill="none"
@@ -130,15 +130,15 @@ const Nav = () => {
                       whileHover={{ scale: 1.05 }}
                       className={`${
                         activeLink === item.href ? "border-b-2 border-red-600" : ""
-                      } text-black block py-4 font-bold text-xl cursor-pointer`}
+                      } text-white block py-4 font-bold text-xl cursor-pointer`}
                     >
                       <Link href={item.href}>{item.label}</Link>
                     </motion.span>
                   ))}
                   <Link href="/contact">
-                    <button className="py-2 px-6 bg-violet-700 text-white">
-                      Contact Our Experts!
-                    </button>
+                  <button className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+                    Contact Our Experts!
+                  </button>
                   </Link>
                 </div>
               </motion.div>
@@ -170,9 +170,11 @@ const Nav = () => {
                 </motion.span>
               </div>
             ))}
-            <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
-              Contact Our Experts!
-            </button>
+            <Link href={"/contact"}>
+              <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+                Contact Our Experts!
+              </button>
+            </Link>
           </motion.div>
         </nav>
       </header>
