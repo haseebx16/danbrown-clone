@@ -36,6 +36,10 @@ const Nav = () => {
   };
 
   return (
+    <>
+    <div className="py-4 w-full bg-gradient-to-br from-red-800 to-black">
+        <p className="text-white">support@stephenkingacademy.com</p>
+    </div>
     <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
       <header
         className={`${timesNewRoman.className} w-screen bg-darkGrey bg-opacity-90 py-0 text-black`}
@@ -173,6 +177,7 @@ const Nav = () => {
         </nav>
       </header>
     </div>
+    </>
   );
 };
 
