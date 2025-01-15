@@ -28,5 +28,5 @@ jobs:
         local-dir: ./out/
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public-html/
+        server-dir: /public_html/
         passive: true
