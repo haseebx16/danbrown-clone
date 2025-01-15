@@ -21,9 +21,10 @@ jobs:
         npm install
         npm run build
     
-    - name: 🔥 Cleanup public_html on FTP server
+    - name: 🔥 Cleanup public_html on FTP server using lftp
       run: |
-          curl -u ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_HOST }}/ -Q "RMD public_html/*" # Deletes all files in public_html
+          sudo apt-get install -y lftp
+          lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_HOST }} -e "mirror --delete --verbose /public_html/ /public_html/; exit"
       env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
