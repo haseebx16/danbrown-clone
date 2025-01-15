@@ -20,15 +20,15 @@ jobs:
       run: |
         npm install
         npm run build
-    
+
     - name: 🔥 Cleanup public_html on FTP server using lftp
       run: |
-          sudo apt-get install -y lftp
-          lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_HOST }} -e "mirror --delete --verbose /public_html/ /public_html/; exit"
+        sudo apt-get install -y lftp
+        lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_HOST }} -e "set ssl:verify-certificate no; rm -rf /public_html/*; exit"
       env:
-          FTP_HOST: ${{ secrets.FTP_HOST }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_HOST: ${{ secrets.FTP_HOST }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
