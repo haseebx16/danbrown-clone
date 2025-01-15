@@ -54,7 +54,7 @@ const Footer = () => {
           <li data-aos="fade-down">Email: support@stephenkingacademy.com</li>
           <li data-aos="fade-up">
             Address: Two California Plaza, 350 South Grand Avenue, #4200, Los
-            Angeles, CA 90071, United States
+            Angeles, CA 90071, United States.
           </li>
         </ul>
       </div>
