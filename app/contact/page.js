@@ -34,12 +34,12 @@ const page = () => {
         text={"Contact us let's work together and produce awesome books"} 
       />
 
-      <div className="flex flex-col mt-12 items-center md:items-start p-4">
-        <h1 data-aos="fade-right" className="text-3xl md:text-5xl md:max-w-4xl font-bold p-4">
+      <div className="flex flex-col mt-12 items-center md:items-center p-4">
+        <h1 data-aos="fade-right" className="text-3xl md:text-5xl text-center md:max-w-4xl font-bold p-4">
           Contact Us And Our Representative Will Reach Out To You
         </h1>
 
-        <form className="w-full mt-8 max-w-lg md:max-w-2xl p-8 rounded-lg">
+        <form className="w-full mt-8 md:mt-0 max-w-lg md:max-w-2xl p-8 rounded-lg">
           <div data-aos="fade-right" className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-semibold">
               Name
