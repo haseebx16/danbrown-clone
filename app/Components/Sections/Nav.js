@@ -6,6 +6,7 @@ import { font2 } from "../font/poppins";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import localFont from "next/font/local";
+import ContactModal from "./ContactModal";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -17,6 +18,15 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
 
   useEffect(() => {
     const path = window.location.pathname;
@@ -135,11 +145,11 @@ const Nav = () => {
                       <Link href={item.href}>{item.label}</Link>
                     </motion.span>
                   ))}
-                  <Link href="/contact">
-                  <button className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+                  
+                  <button onClick={openModal} className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
                     Contact Our Experts!
                   </button>
-                  </Link>
+                  
                 </div>
               </motion.div>
             )}
@@ -170,14 +180,15 @@ const Nav = () => {
                 </motion.span>
               </div>
             ))}
-            <Link href={"/contact"}>
-              <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+            
+              <button onClick={openModal} className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
                 Contact Our Experts!
               </button>
-            </Link>
+            
           </motion.div>
         </nav>
       </header>
+      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
     </>
   );

@@ -1,9 +1,10 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { font2 } from '../font/poppins';
 import { motion } from 'framer-motion';
 import localFont from "next/font/local";
+import ContactModal from './ContactModal';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -12,6 +13,17 @@ const timesNewRoman = localFont({
 });
 
 const About = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className={`${timesNewRoman.className} relative bg-gray-100  text-black pt-16 pb-12`}>
       {/* Image Section */}
@@ -45,11 +57,12 @@ const About = () => {
             It’s a great service to avail, especially for those too busy to write their own books but have concepts, ideas, or personal experiences to share with the rest of the world (such as celebrities or entrepreneurs). Ghostwriting is also really useful to aspiring writers suffering from writer’s block or those who have stories to tell but aren’t confident in their ability to write it down.
           </p>
           <div className="flex space-x-4">
-            <button className="bg-red-700 hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Contact Our Expert!</button>
+            <button onClick={openModal} className="bg-red-700 hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Contact Our Expert!</button>
             <button className="bg-black hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Live Chat</button>
           </div>
         </motion.div>
       </div>
+      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
