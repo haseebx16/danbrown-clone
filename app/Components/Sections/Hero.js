@@ -1,16 +1,25 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { font2 } from "../font/poppins";
-import { font } from "../font/font";
 import localFont from "next/font/local";
+import ContactModal from "./ContactModal";
 
-const timesNewRoman = localFont({ 
-  src: './times.ttf', variable: '--font-times-new-roman', display: 'swap'
+const timesNewRoman = localFont({
+  src: "./times.ttf",
+  variable: "--font-times-new-roman",
+  display: "swap",
 });
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={`${timesNewRoman.className} relative text-black`}>
@@ -38,13 +47,17 @@ const Hero = () => {
           You Conceive We <br /> Construct Your Book
         </p>
         <p className="mt-6 md:mt-8 text-lg max-w-3xl">
-          Get rid of the troubles and tediousness of writing your own book. Let us ghostwrite your book, and you take the credit for it. Our expert team ensures that your vision is brought to life, transforming your ideas into a polished, professional book.
+          Get rid of the troubles and tediousness of writing your own book. Let
+          us ghostwrite your book, and you take the credit for it. Our expert
+          team ensures that your vision is brought to life, transforming your
+          ideas into a polished, professional book.
         </p>
         <div className="flex space-x-2 mt-6">
           <motion.button
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             className="bg-red-700 font-bold uppercase px-4 py-2 tracking-widest"
+            onClick={openModal}
           >
             Let's get started
           </motion.button>
@@ -57,6 +70,8 @@ const Hero = () => {
           </motion.button>
         </div>
       </motion.div>
+
+      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 };
