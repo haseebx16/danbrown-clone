@@ -22,7 +22,7 @@ const AboutServices = () => {
     }, []);
 
   return (
-    <section className={`${timesNewRoman.className} min-h-screen bg-customBeige py-10 px-4`}>
+    <section className={`${timesNewRoman.className} min-h-screen bg-gradient-to-br from-red-800 to-black py-10 px-4`}>
       <div className='flex justify-center items-center pb-16'>
         <h1 data-aos="fade-down" className='md:text-6xl hidden md:block font-bold'>
           About what we do
@@ -32,9 +32,7 @@ const AboutServices = () => {
         {/* Cards Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full md:w-[85%]">
           <div data-aos="fade-right" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-box text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Service Packages</h3>
               <p className="text-gray-600">
@@ -43,9 +41,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lightbulb text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">All Services</h3>
               <p className="text-gray-600">
@@ -54,9 +50,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-left" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-money-bill-wave text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Guaranteed Refund</h3>
               <p className="text-gray-600">
@@ -65,9 +59,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-up-right" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-file-alt text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Original Content</h3>
               <p className="text-gray-600">
@@ -76,9 +68,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lock text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Secure Ownership</h3>
               <p className="text-gray-600">
@@ -87,9 +77,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-left" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lock text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Native Ghostwriters</h3>
               <p className="text-gray-600">
@@ -100,9 +88,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-up-left" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lock text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Online Support</h3>
               <p className="text-gray-600">
@@ -113,9 +99,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-down" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lock text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Extensive Research</h3>
               <p className="text-gray-600">
@@ -126,9 +110,7 @@ const AboutServices = () => {
             </div>
           </div>
           <div data-aos="fade-up-left" className="flex flex-col justify-between items-start bg-white p-6 rounded-lg shadow-md md:h-[200px] md:w-[90%] mx-auto">
-            <div className="flex-shrink-0 bg-purple-700 text-white rounded-full p-4">
-              <i className="fas fa-lock text-2xl"></i>
-            </div>
+            
             <div className="mt-4">
               <h3 className="text-lg font-bold text-gray-800">Client Retention</h3>
               <p className="text-gray-600">

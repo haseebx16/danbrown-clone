@@ -35,12 +35,12 @@ const page = () => {
       />
       
       <div className='flex justify-center bg-gray-50 items-center'>
-        <h1 className="text-center text-3xl md:text-5xl md:max-w-4xl font-bold mt-12">
+        <h1 className="text-center text-black text-3xl md:text-5xl md:max-w-4xl font-bold mt-12">
           The 6 Different Pricing Plans — Choose a Plan That Suits Your Needs
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:p-24 md:pt-8 bg-gray-50 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-12">
+      <div className="grid grid-cols-1 text-black md:p-24 md:pt-8 bg-gray-50 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-12">
         {/* Plan 1 */}
         <div className="py-8 flex flex-col justify-center items-center border-2 border-red-600 bg-white rounded-lg shadow-lg" data-aos="fade-up">
             <h2 className="text-3xl font-bold text-center">Basic Plan</h2>

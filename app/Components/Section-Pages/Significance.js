@@ -9,7 +9,7 @@ const timesNewRoman = localFont({
 
 const Significance = () => {
   return (
-    <div className={`${timesNewRoman.className} bg-gray-50 py-16 px-6 flex flex-col md:flex-row md:items-start md:justify-between`}>
+    <div className={`${timesNewRoman.className} bg-gray-50 text-black py-16 px-6 flex flex-col md:flex-row md:items-start md:justify-between`}>
             {/* Left Content */}
             <div className='md:w-1/2 max-w-4xl mb-8 md:mb-0'>
               <h1 data-aos="fade-down" className='text-3xl md:text-4xl font-bold mb-6'>

@@ -23,7 +23,7 @@ const Services = () => {
   return (
     <section className={`${timesNewRoman.className} bg-gray-100 min-h-screen overflow-hidden`}>
       <div className='flex flex-col md:justify-center justify-start items-start md:p-12 pt-4 pl-3 md:items-center'>
-        <h1 className='md:text-5xl text-2xl font-bold text-left md:text-center'>
+        <h1 className='md:text-5xl text-black text-2xl font-bold text-left md:text-center'>
           A wide range of ghostwriting services For you to avail and becoming a published author!
         </h1>
         <p className='text-gray-500 md:pt-6 pt-3 pb-8 md:pb-0 md:text-center text-left max-w-4xl'>

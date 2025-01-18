@@ -76,7 +76,7 @@ export default function Portfolio() {
   return (
     <section className={`${timesNewRoman.className} py-20 bg-white`}>
       <div className="max-w-[1400px] mx-auto px-12">
-        <h2 className="text-5xl  text-center mb-12 text-black font-bold">
+        <h2 className="text-5xl  text-center md:mb-12 mt-16 md:mt-0 text-black font-bold">
           OUR PORTFOLIO<span className="text-red-700">.</span>
         </h2>
         

@@ -89,7 +89,7 @@ const Page = () => {
         <div className="flex flex-col mt-12 items-center md:items-center p-4">
           <h1
             data-aos="fade-right"
-            className="text-3xl md:text-5xl text-center md:max-w-4xl font-bold p-4"
+            className="text-3xl text-black md:text-5xl text-center md:max-w-4xl font-bold p-4"
           >
             Contact Us And Our Representative Will Reach Out To You
           </h1>

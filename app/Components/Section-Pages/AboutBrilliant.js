@@ -25,10 +25,7 @@ const AboutBrilliant = () => {
     <div className={` ${timesNewRoman.className} bg-white py-10 relative px-4 sm:px-6 lg:px-8`}>
       <div className="text-center">
         <h2 data-aos="fade-right" className="text-3xl md:text-6xl font-bold text-gray-900 sm:text-4xl">
-          <span
-            className="absolute inset-0 bg-red-600 h-[1%] md:left-[25%] md:h-[5%] top-[4%] md:top-[8%] z-0"
-            style={{ width: '50%' }}
-          ></span>
+          
           <span className="relative z-10">
             Our Brilliant Is <br /> Seen Through Our Work
           </span>

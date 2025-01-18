@@ -32,10 +32,7 @@ const page = () => {
       " text="It’s time for you to get your job done efficiently and professionally by hiring our ghostwriting services."/>
       <div className={`${timesNewRoman.className} flex flex-col justify-center relative items-center`}>
         <h1 data-aos="fade-right" className='text-center text-3xl md:text-6xl p-12 font-bold'>
-        <span
-            className="absolute inset-0 bg-yellow-100 h-[1%] md:h-[1%] top-[2%] md:top-[3%] z-0"
-            style={{ width: '50%' }}
-          ></span>
+        
                 <span className='relative z-10'>You Get Only the Best of the Best 
                 With Stephen King Academy’s Ghostwriting, Editing, 
                Publishing, And Marketing Services</span>

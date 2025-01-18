@@ -57,11 +57,8 @@ const Testimonials = () => {
             {/* Heading */}
             <div className="flex justify-center items-center">
                 <h1 data-aos="fade-down" className="text-3xl md:text-5xl md:max-w-5xl font-bold p-4 text-center relative">
-                    <span
-                        className="absolute inset-0 bg-yellow-100 h-[14%] md:top-[20%] top-[15%] z-0"
-                        style={{ width: "70%" }}
-                    />
-                    <span className="relative z-10">
+                    
+                    <span className="relative text-white md:text-black z-10">
                         Our Clients Are What Complete Us. We Value Your Positive Feedback
                     </span>
                 </h1>

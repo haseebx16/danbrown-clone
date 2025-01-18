@@ -38,7 +38,7 @@ const page = () => {
             <p data-aos="fade-right" className='font-normal md:max-w-xl text-left text-gray-500'>
               At Stephen King Academy, we offer our clients book publication services, both for print and online, and distribution and promotion services. Our publishing service is not limited to clients who have hired our ghostwriting/editing services. Anyone wanting to get published can do so through us!
             </p>
-            <h1 data-aos="fade-up" className='text-3xl md:text-5xl max-w-md font-bold mt-4'>Sell Your Content With YOUR NAME Following</h1>
+            <h1 data-aos="fade-up" className='text-3xl md:text-5xl text-black max-w-md font-bold mt-4'>Sell Your Content With YOUR NAME Following</h1>
             <p data-aos="fade-down" className='font-normal text-lg text-left mt-4 text-gray-500'>BOOK PUBLISHING SERVICES WITHOUT STRUGGLE AND HASSLE</p>
             <p data-aos="fade-up" className='font-bold text-xl md:mt-16 mt-4 text-left text-red-600 '>BOOK PUBLISHING SERVICES INCLUDE:</p>
             <div data-aos="fade-left">

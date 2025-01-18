@@ -34,7 +34,7 @@ const page = () => {
       />
       <div className=''>
           <div className='bg-gray-50 h-[24rem] md:h-[26rem] flex flex-col items-center p-8'>
-                <h1 data-aos="fade-down" className='text-3xl md:text-6xl md:max-w-3xl text-center font-bold'>
+                <h1 data-aos="fade-down" className='text-3xl text-black md:text-6xl md:max-w-3xl text-center font-bold'>
                   Premium & Exclusive Ghostwriting Services For Your Ideas
                 </h1>
                 <p data-aos="fade-up" className='text-gray-500 max-w-sm md:max-w-3xl md:text-2xl mt-4 text-center md:text-left'>
@@ -43,7 +43,7 @@ const page = () => {
           </div>
       </div>
       <div className='bg-white md:flex'>
-            <div data-aos="fade-right" className=' flex flex-col md:p-16 md:flex-row justify-start items-center mt-8'>
+            <div data-aos="fade-right" className=' flex flex-col md:p-16 md:flex-row justify-start items-center md:mt-8'>
                 <img src='/book1.png' className='bg-gray-50'/>
                 <div className='flex flex-col '>
                   <h2 className='text-2xl font-bold mt-2 md:text-left p-2 text-center'>Fiction</h2>
@@ -71,7 +71,7 @@ const page = () => {
                 </div>
             </div>
         </div>
-          <div className='bg-gray-50 mt-8 md:flex'>
+          <div className='bg-gray-50 md:mt-8 md:flex'>
             <div data-aos="fade-up-left" className=' flex flex-col md:p-16 md:flex-row justify-start items-center'>
                 <img src='/book4.png' className='bg-gray-50'/>
                 <div className='flex flex-col'>
@@ -100,7 +100,7 @@ const page = () => {
                 </div>
             </div>
           </div>
-          <section className={`${font2.className} md:mt-0 mt-24`}>
+          <section className={`${font2.className} md:mt-0`}>
                   <div className='flex flex-col'>
                       <div className=' flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                           <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Get Started By Hiring Our Services And Taking The First Step To Your Ambition</p>

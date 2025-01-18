@@ -28,8 +28,8 @@ const Book = () => {
       <div className='md:flex'>
         <div className='md:w-1/2 pt-8 md:pl-8 pl-4'>
           <h1 data-aos="fade-right" className='md:text-5xl text-3xl font-bold relative'>
-            <span className='absolute inset-0 bg-yellow-100  h-[18%] top-[1%] z-0' style={{ width: '50%' }}/>
-            <span className='relative z-10'>
+            
+            <span className='relative text-black z-10'>
               It’s time to get started Sharing your ideas with The World
             </span>
           </h1>
