@@ -52,6 +52,7 @@ const Footer = () => {
         {/* Contact Info */}
         <ul className="space-y-2 text-lg p-4 pt-8 text-center md:text-left md:p-0 max-w-sm">
           <li data-aos="fade-down">Email: support@stephenkingacademy.com</li>
+          <li data-aos="fade-down">Phone: (310) 564-9107</li>
           <li data-aos="fade-up">
             Address: Two California Plaza, 350 South Grand Avenue, #4200, Los
             Angeles, CA 90071, United States.
