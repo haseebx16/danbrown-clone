@@ -48,11 +48,17 @@ const Footer = () => {
           <Link href={"/publication"}><li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>Publication</li></Link>
           <Link href={"/marketing"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Marketing</li></Link>
         </ul>
+        <ul className="space-y-2 p-4 md:p-0 text-lg">
+          <Link href={"/privacypolicy"}><li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Privacy Policy</li></Link>
+          {/* <Link href={"/bookwriting"}><li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Book Writing</li></Link>
+          <Link href={"/publication"}><li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>Publication</li></Link>
+          <Link href={"/marketing"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Marketing</li></Link> */}
+        </ul>
 
         {/* Contact Info */}
         <ul className="space-y-2 text-lg p-4 pt-8 text-center md:text-left md:p-0 max-w-sm">
-          <li data-aos="fade-down">Email: support@stephenkingacademy.com</li>
-          <li data-aos="fade-down">Phone: (310) 564-9107</li>
+          <a href='mailto:support@stephenkingacademy.com'><li data-aos="fade-down">Email: support@stephenkingacademy.com</li></a>
+          <a href='tel:(310) 564-9107'><li data-aos="fade-down">Phone: (310) 564-9107</li></a>
           <li data-aos="fade-up">
             Address: Two California Plaza, 350 South Grand Avenue, #4200, Los
             Angeles, CA 90071, United States.

@@ -48,7 +48,7 @@ const Nav = () => {
   return (
     <>
     <div className="py-2 w-full flex justify-end px-4 items-end bg-gradient-to-br from-red-800 to-black">
-        <p className="text-white text-right">support@stephenkingacademy.com</p>
+        <a href="mailto:support@stephenkingacademy.com"><p className="text-white text-right">support@stephenkingacademy.com</p></a>
     </div>
     <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
       <header
