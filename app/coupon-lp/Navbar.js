@@ -136,7 +136,7 @@ const Navbar = () => {
                   
                 <p className="text-xl mt-4 mb-6">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
                   <button onClick={openModal} className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
-                    Contact Our Experts!
+                    Let's Get Started
                   </button>
 
                   
@@ -147,7 +147,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <p className="text-xl">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
             <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
-              Contact Our Experts!
+              Let's Get Started
             </button>
           </div>
         </nav>
