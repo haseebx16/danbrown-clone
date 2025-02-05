@@ -76,8 +76,10 @@ const PricingPlans = () => {
                 <h1 className='text-2xl bg-rose-800 text-center p-4'>Amazon Diamond Package <br/><span className='text-2xl'>$17,500</span> <span className='before-price text-xl'>$35,000</span></h1>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Writing & Rewriting of up to 500 Pages</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Unlimited Revisions</p>
-                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;3 Months of Paid Marketing on Google, Facebook and Amazon</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;6 Months of Marketing on Google, Facebook and Amazon</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Book Launch Globally</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Audio Book up to 3 hours</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Audio Book Publishing on Audible.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Full Ownership Rights</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Planning / Creating/updating the outline</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Ghostwriting original content based on interviews or research</p>
@@ -85,18 +87,20 @@ const PricingPlans = () => {
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Revisions to our writing per your feedback and guidance.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Meticulous editing to ensure your text is free of error.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Adjusting the layout and presentation for the publishing standards</p>
-                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Add Up to 50-60 Custom Illustrations.</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Add Up to 60-70 Custom Illustrations.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Adjusting the layout and presentation for the publishing standards.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;An attention-grabbing Book Cover.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Turnaround Time of 60 -80 Days.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Rights to make changes to your book.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Editing, Proofreading, and formatting.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Author Website</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Intro Book Video(Video Trailer)</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Author's Bio</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Pitching article ideas to the press.</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Publishing on Amazon Kindle, Barnes & Noble, Kobo, Ingram Spark, iBook, and Lulu (Any 5 Platforms)</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Available in 3 different formats E-Book, and Paper Back, Hardcover</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Amazon will be responsible for printing and shipping your book globally</p>
-                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 4000 Reads in 12 months</p>
+                <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 6000 Reads in 12 months</p>
                 <p className='mt-4'><span className='text-red-500'>Note: The Amazon Best Seller Package guarantees you at least $20,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
                 <button className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
             </div>
