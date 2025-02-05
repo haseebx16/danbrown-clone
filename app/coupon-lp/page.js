@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import HeroPage from './HeroPage'
 import Cards from './Cards'
 import World from './World'
+import PricingPlans from './PricingPlans'
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
         <HeroPage/>
         <Cards/>
         <World/>
+        <PricingPlans/>
     </>
   )
 }

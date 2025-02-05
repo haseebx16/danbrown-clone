@@ -22,3 +22,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.before-price {
+  
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+}
