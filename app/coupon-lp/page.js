@@ -3,6 +3,7 @@ import Hero from '../Components/Sections/Hero'
 import Navbar from './Navbar'
 import HeroPage from './HeroPage'
 import Cards from './Cards'
+import World from './World'
 
 const page = () => {
   return (
@@ -10,6 +11,7 @@ const page = () => {
         <Navbar/>
         <HeroPage/>
         <Cards/>
+        <World/>
     </>
   )
 }
