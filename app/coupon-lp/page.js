@@ -8,6 +8,7 @@ import PricingPlans from './PricingPlans'
 import Features from './Features'
 import Testimonials from '../Components/Sections/Testimonials'
 import Footerr from './Footer'
+import Work from './Work'
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         <Cards/>
         <World/>
         <PricingPlans/>
+        <Work/>
         <Features/>
         <Testimonials/>
         <Footerr/>
