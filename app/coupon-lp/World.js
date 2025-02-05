@@ -9,7 +9,7 @@ const timesNewRoman = localFont({
 
 const World = () => {
   return (
-    <section className={`${timesNewRoman.className} text-black bg-gray-100 p-12 flex`}>
+    <section className={`${timesNewRoman.className} text-black bg-gray-100 p-12 flex flex-col md:flex-row`}>
       <div className='flex flex-col'>
         <h1 className='text-4xl font-bold text-red-700'>The world is waiting for your book</h1>
         <p className='text-lg mt-4 max-w-2xl text-justify'>Every great advancement is born out of a fascinating work of imagination. We, at Stephen King Academy, will take that step forward for you. Every story deserves to be told and heard. Therefore, we invite you to experience the work of industry's most professional yet extremely innovative ghostwriters, all under one roof.</p>

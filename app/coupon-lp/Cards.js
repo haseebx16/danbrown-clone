@@ -5,7 +5,7 @@ import { MdHeadphones } from "react-icons/md";
 
 const Cards = () => {
   return (
-    <div className='grid grid-cols-3'>
+    <div className='grid grid-cols-1 md:grid-cols-3'>
         <div className='py-12 px-12 flex  text-2xl bg-red-800 text-white text-center'> 
             <MdPriceChange className='text-3xl mr-4'/>
             Affordable Prices

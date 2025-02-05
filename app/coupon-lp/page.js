@@ -6,6 +6,8 @@ import Cards from './Cards'
 import World from './World'
 import PricingPlans from './PricingPlans'
 import Features from './Features'
+import Testimonials from '../Components/Sections/Testimonials'
+import Footerr from './Footer'
 
 const page = () => {
   return (
@@ -16,6 +18,8 @@ const page = () => {
         <World/>
         <PricingPlans/>
         <Features/>
+        <Testimonials/>
+        <Footerr/>
     </>
   )
 }
