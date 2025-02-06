@@ -46,8 +46,8 @@ const HeroPage = () => {
     <div className={`${timesNewRoman.className} relative text-black`}>
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <img
-        src="/bg-2.jpg"
-        className="w-full h-screen md:h-[44rem] object-cover"
+        src="/bg-final.jpg"
+        className="w-full relative h-screen md:h-[48rem] object-cover"
         alt="Hero Background"
       />
 
@@ -55,12 +55,12 @@ const HeroPage = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="absolute inset-0 flex flex-col items-start justify-center text-white text-center px-4"
+        className="absolute inset-0 flex flex-col mt-48 items-start justify-center text-white text-center p-12 md:mt-8"
       >
         <div className="flex space-x-8 ">
           <div className="text-center">
             <div
-              className="w-20 h-20 flex-col rounded-full border-8 animate-glow-red border-red-700 flex items-center justify-center text-2xl font-bold"
+              className="w-20 h-20 flex-col rounded-full border-8 animate-glow-red border-red-600 flex items-center justify-center text-2xl font-bold"
             >
             <p className="mt-2 text-white text-xs">HRS</p>
               {hours}
@@ -68,7 +68,7 @@ const HeroPage = () => {
           </div>
           <div className="text-center">
             <div
-              className="w-20 h-20 rounded-full border-8 border-red-700 animate-glow-red flex flex-col items-center justify-center text-2xl font-bold"
+              className="w-20 h-20 rounded-full border-8 border-red-600 animate-glow-red flex flex-col items-center justify-center text-2xl font-bold"
             >
             <p className="mt-2 text-white text-xs">MINS</p>
               {minutes}
@@ -76,7 +76,7 @@ const HeroPage = () => {
           </div>
           <div className="text-center">
             <div
-              className="w-20 h-20 rounded-full border-8 border-red-700 animate-glow-red flex flex-col items-center justify-center text-2xl font-bold"
+              className="w-20 h-20 rounded-full border-8 border-red-600 animate-glow-red flex flex-col items-center justify-center text-2xl font-bold"
             >
             <p className="mt-2 text-white text-xs">SEC</p>
               {secs}
@@ -118,7 +118,7 @@ const HeroPage = () => {
             Live Chat
           </motion.button>
         </div>
-        <div className="flex md:flex-row md:space-x-8 space-y-8 mt-16 md:space-y-0 flex-col justify-center items-center md:mt-12">
+        <div className="flex md:flex-row md:space-x-8 space-y-8 md:mt-16 md:space-y-0 flex-wrap  justify-center items-center md:mt-12">
           <img src="/company-1.png" />
           <img src="/company-2.png" />
           <img src="/company-3.png" />

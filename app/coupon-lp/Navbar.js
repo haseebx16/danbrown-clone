@@ -46,10 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="py-2 w-full flex justify-end px-4 items-end bg-gradient-to-br from-red-800 to-black">
-        <a href="mailto:support@stephenkingacademy.com"><p className="text-white text-right">support@stephenkingacademy.com</p></a>
-    </div>
-    <div className="relative z-50 flex justify-center text-black items-center flex-wrap bg-white">
+    <div className="absolute z-50 flex justify-center text-black items-center flex-wrap bg-transparent">
       <header
         className={`${timesNewRoman.className} w-screen bg-darkGrey bg-opacity-90 py-0 text-black`}
       >
@@ -57,13 +54,13 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center">
              
-              <img src="/nav-logo.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '120px' }} />
+              <img src="/logo.png" alt="Logo" className="w-40 h-7 sm:h-10 md:h-28 lg:h-14" style={{ height: '120px' }} />
             </div>
           </Link>
 
           {/* Hamburger icon for mobile */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className="text-black focus:outline-none">
+            <button onClick={toggleMenu} className="text-white focus:outline-none">
               {isOpen ? (
                 <svg
                   className="w-6 h-6"
@@ -135,7 +132,7 @@ const Navbar = () => {
                 <div className="flex flex-col items-center justify-center space-y-0">
                   
                   
-                <p className="text-xl mt-4 mb-6">Call Us Now <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
+                <p className="text-xl text-white mt-4 mb-6">Call Us Now <br/><span className="text-white text-2xl">(310) 564-9107</span></p>
                   <button onClick={openModal} className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
                     Let's Get Started
                   </button>
@@ -146,7 +143,7 @@ const Navbar = () => {
             )}
           </AnimatePresence>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:(310) 564-9107"><p className="text-xl">Call Us Now <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p></a>
+            <a href="tel:(310) 564-9107"><p className="text-xl text-white">Call Us Now <br/><span className="text-white text-2xl">(310) 564-9107</span></p></a>
             <button onClick={openModal} className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
               Let's Get Started
             </button>

@@ -16,7 +16,7 @@ export default function Layout({ children }) {
   return (
     <>
       <html lang="en">
-        <body className={timesNewRoman?.className}>
+        <body className={timesNewRoman?.className + " overflow-x-hidden"}>
           {children}
         </body>
       </html>

@@ -34,16 +34,21 @@ const World = () => {
             Let's Get Started
           </button>
         </div>
-        <div className='flex flex-col justify-start items-start space-y-4 ml-24'>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Fiction</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Biography</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Autobiography</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Anthology</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Western</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Non-Fiction</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Memoirs</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Romance</p>
-          <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Informative</p>
+        <div className='flex flex-col md:flex-row justify-center items-center space-x-8 '>
+          <div className='flex flex-col justify-start items-start space-y-4 md:ml-24 mt-4 md:mt-0'>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Fiction</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Biography</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Autobiography</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Anthology</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Western</p>
+          </div>
+          <div className='flex flex-col justify-start items-start hidden md:block space-y-4 '>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Action</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Adventure</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Non-Fiction</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Memoirs</p>
+            <p className='text-xl'><span className='text-red-700 text-xl'>&#x2713;</span> Romance</p>
+          </div>
         </div>
       </section>
       <AvailModal isOpen={isModalOpen} onClose={closeModal} />
