@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import { font2 } from '../font/poppins';
+import { font } from '../font/font';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import localFont from "next/font/local";
@@ -24,7 +24,7 @@ const AboutServices = () => {
   return (
     <section className={`${timesNewRoman.className} min-h-screen bg-gradient-to-br from-red-800 to-black py-10 px-4`}>
       <div className='flex justify-center items-center pb-16'>
-        <h1 data-aos="fade-down" className='md:text-6xl hidden md:block font-bold'>
+        <h1 data-aos="fade-down" className={`${font.className} md:text-6xl text-white hidden md:block font-bold`}>
           About what we do
         </h1>
       </div>

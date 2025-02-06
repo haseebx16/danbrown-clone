@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import localFont from "next/font/local";
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -42,10 +43,10 @@ const WritingHire = ({ picsrc ,head, text1, text2,bg }) => {
           <h1 data-aos="fade-down" className="text-3xl md:text-5xl text-white font-bold md:pt-4">
             {head}
           </h1>
-          <p data-aos="fade-up-right" className="text-white md:text-lg mt-4">
+          <p data-aos="fade-up-right" className={`${font.className} text-white md:text-lg mt-4`}>
             {text1}
           </p>
-          <p data-aos="fade-up" className="text-white md:text-lg mt-4">
+          <p data-aos="fade-up" className={`${font.className} text-white md:text-lg mt-4`}>
             {text2}
           </p>
         </div>

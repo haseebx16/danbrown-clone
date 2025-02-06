@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import localFont from "next/font/local";
 import emailjs from "emailjs-com";
+import { font } from "../Components/font/font";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -89,7 +90,7 @@ const Page = () => {
         <div className="flex flex-col mt-12 items-center md:items-center p-4">
           <h1
             data-aos="fade-right"
-            className="text-3xl text-black md:text-5xl text-center md:max-w-4xl font-bold p-4"
+            className={` ${font.className} text-3xl text-black md:text-5xl text-center md:max-w-4xl font-bold p-4`}
           >
             Contact Us And Our Representative Will Reach Out To You
           </h1>

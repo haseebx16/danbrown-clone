@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import Nav from '../Sections/Nav';
 import AboutNumber from './AboutNumber';
 import localFont from "next/font/local";
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -35,7 +36,7 @@ const MainSection = ({ subHead, mainHead, text }) => {
           </h1>
           <h1
             data-aos="fade-up-right"
-            className="text-2xl md:text-6xl md:max-w-xl pt-2 font-bold"
+            className={` ${font.className} text-2xl md:text-6xl md:max-w-xl pt-2 font-extrabold`}
           >
             {mainHead}
           </h1>

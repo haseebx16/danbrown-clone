@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import { font2 } from '../font/poppins';
+import { font } from '../font/font';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import localFont from "next/font/local";
@@ -53,7 +53,7 @@ const AboutBrilliant = () => {
         </div>
         {/* Right Section (Content) */}
         <div data-aos="fade-up" className="mt-10 md:mt-0 md:w-1/2">
-          <p className="text-lg text-gray-700">
+          <p className={`${font.className} text-lg text-gray-700`}>
             We don’t mean to brag about how good we are at what we do but, hey,
             we deserve to say a little something. With more than a decade of
             being in the ghostwriting industry, Stephen King Academy is weathered
@@ -62,7 +62,7 @@ const AboutBrilliant = () => {
             written book, and we’ve assisted our clients with their
             already-written manuscripts via meticulous editing and proofreading.
           </p>
-          <p className="mt-4 text-lg text-gray-700">
+          <p className={` ${font.className} mt-4 text-lg text-gray-700`}>
             With more than a thousand books written, more than a hundred of
             which went on to become internationally acclaimed books, our team
             of more than five hundred native English writers are here to

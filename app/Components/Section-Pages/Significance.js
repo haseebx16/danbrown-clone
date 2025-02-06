@@ -1,5 +1,6 @@
 import React from 'react'
 import localFont from "next/font/local";
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -15,7 +16,7 @@ const Significance = () => {
               <h1 data-aos="fade-down" className='text-3xl md:text-4xl font-bold mb-6'>
                 We recognize the <span className='underline decoration-red-600'>significance</span> of a well-told story
               </h1>
-              <p data-aos="fade-up" className='text-gray-600 text-lg p-4 md:text-lg'>
+              <p data-aos="fade-up" className={`${font.className} text-gray-600 text-lg p-4 md:text-lg`}>
                 Do you want to get your ideas published but cannot find the appropriate platform? Stephen King Academy is your ultimate destination. Our expert ghostwriters know how to captivate the audience by sharing a unique idea or story. We are known for creating well-composed, creative, and the finest quality content, prioritizing 100% customer satisfaction.
               </p>
             </div>

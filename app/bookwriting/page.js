@@ -9,6 +9,7 @@ import WritingHire from '../Components/Section-Pages/Writing-Hire';
 import Testimonials from '../Components/Sections/Testimonials';
 import Footer from '../Components/Sections/Footer';
 import Significance from '../Components/Section-Pages/Significance';
+import { font } from '../Components/font/font';
 import localFont from "next/font/local";
 
 const timesNewRoman = localFont({
@@ -37,7 +38,7 @@ const page = () => {
                 <h1 data-aos="fade-down" className='text-3xl text-black md:text-6xl md:max-w-3xl text-center font-bold'>
                   Premium & Exclusive Ghostwriting Services For Your Ideas
                 </h1>
-                <p data-aos="fade-up" className='text-gray-500 max-w-sm md:max-w-3xl md:text-2xl mt-4 text-center md:text-left'>
+                <p data-aos="fade-up" className={`${font.className} text-gray-500 max-w-sm md:max-w-3xl md:text-xl mt-4 text-center md:text-left`}>
                   At Stephen King Academy, our clients are offered premium and exclusive ghostwriting services for all your ideas, stories, and concepts to come to life. Our team of professional writers are specialized in every genre known to man; we have a writer for every genre! The niche specialty of our writers is what sets them apart from other ghostwriters.
                 </p>
           </div>
@@ -100,7 +101,7 @@ const page = () => {
                 </div>
             </div>
           </div>
-          <section className={`${font2.className} md:mt-0`}>
+          <section className={`${font.className} md:mt-0`}>
                   <div className='flex flex-col'>
                       <div className=' flex-col bg-gradient-to-b from-red-700 via-red-900 to-black p-6 md:p-12 flex justify-center items-center md:justify-start md:items-start'>
                           <p data-aos="fade-down" className='text-white font-bold text-3xl md:text-5xl text-center md:text-left md:max-w-4xl'>Get Started By Hiring Our Services And Taking The First Step To Your Ambition</p>
