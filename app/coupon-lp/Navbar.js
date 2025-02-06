@@ -135,7 +135,7 @@ const Navbar = () => {
                 <div className="flex flex-col items-center justify-center space-y-0">
                   
                   
-                <p className="text-xl mt-4 mb-6">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
+                <p className="text-xl mt-4 mb-6">Call Us Now <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
                   <button onClick={openModal} className="px-6 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
                     Let's Get Started
                   </button>
@@ -146,7 +146,7 @@ const Navbar = () => {
             )}
           </AnimatePresence>
           <div className="hidden md:flex items-center space-x-4">
-            <a href="tel:(310) 564-9107"><p className="text-xl">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p></a>
+            <a href="tel:(310) 564-9107"><p className="text-xl">Call Us Now <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p></a>
             <button onClick={openModal} className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
               Let's Get Started
             </button>
