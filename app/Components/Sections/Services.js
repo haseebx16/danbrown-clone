@@ -5,6 +5,7 @@ import { font2 } from '../font/poppins';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import localFont from "next/font/local";
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -26,11 +27,11 @@ const Services = () => {
         <h1 className='md:text-5xl text-black text-2xl font-bold text-left md:text-center'>
           A wide range of ghostwriting services For you to avail and becoming a published author!
         </h1>
-        <p className='text-gray-500 md:pt-6 pt-3 pb-8 md:pb-0 md:text-center text-left max-w-4xl'>
+        <p className={`${font.className} text-gray-500 md:pt-6 pt-3 pb-8 md:pb-0 md:text-center text-left max-w-4xl`}>
           At Stephen King Academy, our clients can avail a wide range of ghostwriting services to get one step closer to becoming a successfully published author. We are sure you will find our range of services to be comprehensive.
         </p>
       </div>
-      <div className='md:flex'>
+      <div className={` ${font.className} md:flex`}>
         <div
           className='md:w-1/2'
           data-aos='flip-right'

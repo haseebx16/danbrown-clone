@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import ContactModal from "./ContactModal";
+import { font } from "../font/font";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -19,6 +20,14 @@ const Hero = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const openLiveChat = () => {
+    if (typeof Tawk_API !== "undefined") {
+      Tawk_API.toggle(); // This opens the live chat
+    } else {
+      console.error("Tawk_API is not loaded yet.");
+    }
   };
 
   return (
@@ -46,7 +55,7 @@ const Hero = () => {
         <p className="text-3xl md:text-8xl font-bold leading-tight mt-4">
           You Conceive We <br /> Construct Your Book
         </p>
-        <p className="mt-6 md:mt-8 text-lg max-w-3xl">
+        <p className={`${font.className} mt-6 md:mt-8 text-lg max-w-3xl`}>
           Get rid of the troubles and tediousness of writing your own book. Let
           us ghostwrite your book, and you take the credit for it. Our expert
           team ensures that your vision is brought to life, transforming your
@@ -65,6 +74,7 @@ const Hero = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             className="bg-white text-black font-bold uppercase px-4 py-2 tracking-widest"
+            onClick={openLiveChat} // Trigger live chat opening
           >
             Live Chat
           </motion.button>

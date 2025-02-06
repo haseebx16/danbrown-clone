@@ -4,6 +4,7 @@ import React from 'react'
 import localFont from 'next/font/local'
 import { useState } from 'react';
 import AvailModal from './AvailModal';
+import { font } from './font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -30,7 +31,7 @@ const PricingPlans = () => {
             <p className='text-4xl font-bold'>Pricing Plans</p>
             <p className='text-lg text-gray-300 text-center max-w-2xl mt-4'>Our podium of Stephen King Academy services offers you with an array of experienced ghostwriters, editors and publishing eccentrics who will together, transform your idea into a splendid yet commendable book.</p>
         </div>
-        <div className='flex md:flex-row  flex-col md:space-y-0  mt-6 space-y-2 md:space-x-2'>
+        <div className={`${font.className} flex md:flex-row  flex-col md:space-y-0  mt-6 space-y-2 md:space-x-2`}>
             {/* Pricing Plan: 01 */}
             <div className=' border-2 bg-black border-red-700 p-4 h-fit rounded-lg mt-8 max-w-xs'>
                 <h1 className='text-2xl bg-rose-800 text-center p-4'>Amazon's Best Seller <br/><span className='text-2xl'>$5,999</span> <span className='before-price text-xl'>$12,000</span></h1>

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import "./globals.css";
 import localFont from "next/font/local";
+import { font } from "./Components/font/font";
 
 const timesNewRoman = 
   localFont({
@@ -29,7 +30,7 @@ export default function Layout({ children }) {
   return (
     <>
       <html lang="en">
-        <body className={timesNewRoman?.className + " overflow-x-hidden"}>
+        <body className={font.className + " overflow-x-hidden"}>
           {children}
         </body>
       </html>

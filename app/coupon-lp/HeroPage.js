@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import AvailModal from "./AvailModal";
+import { font } from "./font/font";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -43,7 +44,7 @@ const HeroPage = () => {
   const { hours, minutes, secs } = formatTime(timeLeft);
 
   return (
-    <div className={`${timesNewRoman.className} relative text-black`}>
+    <div className={`${font.className} relative text-black`}>
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <img
         src="/bg-final.jpg"

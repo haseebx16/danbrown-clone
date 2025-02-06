@@ -7,6 +7,7 @@ import { font2 } from '../font/poppins';
 import localFont from "next/font/local";
 import ContactModal from './ContactModal';
 import { useState } from 'react';
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -85,7 +86,7 @@ const Advantages = () => {
           The Advantages Of<br/> Becoming An Author
         </h1>
         
-        <p className="mt-6 md:mt-4 text-justify max-w-2xl whitespace-wrap text-lg md:text-xl">
+        <p className={`${font.className} mt-6 md:mt-4 text-justify max-w-2xl whitespace-wrap text-lg md:text-xl`}>
         Is writing a viable career? In short, yes! But it takes very strong writing skills to stand out among the countless aspiring online writers out there. It also takes a lot of hard work and dependability, along with a humble attitude. Stephen King Academy is here to alleviate the hard work aspect of becoming a writer so you can enjoy the benefits of receiving royalties, recognition, and credibility with your stories and your ideas. The world deserves to know what you have to share!
         </p>
         <div className="">

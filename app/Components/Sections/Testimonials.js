@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { font } from "../font/font";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -70,14 +71,14 @@ const Testimonials = () => {
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="p-6 bg-white rounded-lg shadow-lg relative">
                             {/* Testimonial Text */}
-                            <p data-aos="fade-up" className="text-gray-700 text-lg md:text-2xl leading-relaxed">{testimonial.text}</p>
+                            <p data-aos="fade-up" className={`${font.className} text-gray-700 text-lg md:text-2xl leading-relaxed`}>{testimonial.text}</p>
 
                             {/* Author Info */}
                             <div className="flex items-center mt-6">
                                 <div className="p-2 bg-purple-700 text-white rounded-full">
                                     <i className="fas fa-quote-left text-xl"></i>
                                 </div>
-                                <div className="ml-4">
+                                <div className={`${font.className} ml-4`}>
                                     <p data-aos="fade-right" className="text-blue-800 font-semibold">{testimonial.name}</p>
                                     <p className="text-gray-500 text-sm">{testimonial.role}</p>
                                 </div>

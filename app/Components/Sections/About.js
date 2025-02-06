@@ -5,6 +5,7 @@ import { font2 } from '../font/poppins';
 import { motion } from 'framer-motion';
 import localFont from "next/font/local";
 import ContactModal from './ContactModal';
+import { font } from '../font/font';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -22,6 +23,14 @@ const About = () => {
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const openLiveChat = () => {
+    if (typeof Tawk_API !== "undefined") {
+      Tawk_API.toggle(); // This opens the live chat
+    } else {
+      console.error("Tawk_API is not loaded yet.");
+    }
   };
 
   return (
@@ -50,15 +59,15 @@ const About = () => {
           transition={{ duration: 1, ease: 'easeInOut' }} // Animation properties
         >
           <h2 className="md:text-6xl text-4xl font-extrabold leading-tight">Welcoming You to The Wonderful World of Becoming a Published Author</h2>
-          <p className="mt-4 text-lg text-gray-500">
+          <p className={`${font.className} mt-4 text-lg text-gray-500`}>
             Stephen King Academy welcomes you, our esteemed potential client, to the wonderful and magnificent world of ghostwriting! Ghostwriting is a professional service offered by talented and creative professional writers who are willing to use their expertise with the written word to formulate your ideas and concepts into a worded reality.
           </p>
-          <p className="mt-4 text-lg text-gray-500">
+          <p className={`${font.className} mt-4 text-lg text-gray-500`}>
             It’s a great service to avail, especially for those too busy to write their own books but have concepts, ideas, or personal experiences to share with the rest of the world (such as celebrities or entrepreneurs). Ghostwriting is also really useful to aspiring writers suffering from writer’s block or those who have stories to tell but aren’t confident in their ability to write it down.
           </p>
           <div className="flex space-x-4">
             <button onClick={openModal} className="bg-red-700 hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Contact Our Expert!</button>
-            <button className="bg-black hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Live Chat</button>
+            <button onClick={openLiveChat} className="bg-black hover:bg-red-300 hover:text-black duration-300 mt-8 text-white font-bold uppercase px-4 py-2 tracking-widest">Live Chat</button>
           </div>
         </motion.div>
       </div>
