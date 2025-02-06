@@ -1,5 +1,9 @@
+"use client";
+
 import React from 'react'
 import localFont from 'next/font/local'
+import { useState } from 'react';
+import AvailModal from './AvailModal';
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -9,6 +13,17 @@ const timesNewRoman = localFont({
 
 
 const PricingPlans = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    }
+
   return (
     <section className={`${timesNewRoman.className} text-white bg-gradient-to-r from-red-800 to-black p-12 flex flex-col justify-center items-center`}>
         <div className='flex flex-col justify-center items-center'>
@@ -38,7 +53,7 @@ const PricingPlans = () => {
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Publishing on Amazon Kindle, Barnes & Noble, Kobo, Ingram Spark, E-Book Publishing (Any 3)</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 2000 Reads in 12 months</p>
                 <p className='mt-4'><span className='text-red-500'>Note: The Amazon Best Seller Package guarantees you at least $20,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
-                <button className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
+                <button onClick={openModal} className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
             </div>
 
             {/* Pricing Plan: 02 */}
@@ -67,8 +82,8 @@ const PricingPlans = () => {
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Available in 3 different formats E-Book, and Paper Back, Hardcover</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Amazon will be responsible for printing and shipping your book globally</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 4000 Reads in 12 months</p>
-                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Best Seller Package guarantees you at least $40,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
-                <button className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
+                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Prime Package guarantees you at least $40,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
+                <button onClick={openModal} className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
             </div>
 
             {/* Pricing Plan: 03 */}
@@ -101,8 +116,8 @@ const PricingPlans = () => {
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Available in 3 different formats E-Book, and Paper Back, Hardcover</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Amazon will be responsible for printing and shipping your book globally</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 6000 Reads in 12 months</p>
-                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Best Seller Package guarantees you at least $20,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
-                <button className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
+                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Diamond Package guarantees you at least $60,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
+                <button onClick={openModal} className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
             </div>
 
             {/* Pricing Plan: 04 */}
@@ -134,9 +149,10 @@ const PricingPlans = () => {
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Available in 3 different formats E-Book, and Paper Back, Hardcover</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Amazon will be responsible for printing and shipping your book globally</p>
                 <p className='mt-2'><span className='text-red-500'>&#x2713;</span>&nbsp;Guaranteed 12,000 Reads in 12 months</p>
-                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Best Seller Package guarantees you at least $120,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
-                <button className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
+                <p className='mt-4'><span className='text-red-500'>Note: The Amazon Platinum Package guarantees you at least $120,000 in revenue in the first year after the book is published, and if we fail to meet this goal, we will fully refund your money.</span></p>
+                <button onClick={openModal} className='mt-4 bg-red-700 text-white px-4 py-2'>Let's Get Started</button>
             </div>
+            <AvailModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
     </section>
   )

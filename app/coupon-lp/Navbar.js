@@ -5,6 +5,7 @@ import navLinks from "./data/navLinks";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import localFont from "next/font/local";
+import AvailModal from "./AvailModal";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -145,11 +146,12 @@ const Navbar = () => {
             )}
           </AnimatePresence>
           <div className="hidden md:flex items-center space-x-4">
-            <p className="text-xl">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p>
-            <button className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
+            <a href="tel:(310) 564-9107"><p className="text-xl">Call Us On: <br/><span className="text-red-700 text-2xl">(310) 564-9107</span></p></a>
+            <button onClick={openModal} className="px-3 py-2 bg-red-700 text-white uppercase hover:bg-white border border-black hover:text-black duration-300">
               Let's Get Started
             </button>
           </div>
+          <AvailModal isOpen={isModalOpen} onClose={closeModal}/>
         </nav>
       </header>
     </div>

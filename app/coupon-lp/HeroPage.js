@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
+import AvailModal from "./AvailModal";
 
 const timesNewRoman = localFont({
   src: "./times.ttf",
@@ -10,12 +11,21 @@ const timesNewRoman = localFont({
 });
 
 const HeroPage = () => {
-  const [timeLeft, setTimeLeft] = useState(3600); // 1 hour in seconds
+  const [timeLeft, setTimeLeft] = useState(3600);
+  const [ isModalOpen, setIsModalOpen ] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
-        if (prevTime <= 1) return 3600; // Reset timer when it reaches zero
+        if (prevTime <= 1) return 3600;
         return prevTime - 1;
       });
     }, 1000);
@@ -34,17 +44,12 @@ const HeroPage = () => {
 
   return (
     <div className={`${timesNewRoman.className} relative text-black`}>
-      {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-10"></div>
-
-      {/* Image */}
       <img
         src="/bg-2.jpg"
         className="w-full h-screen md:h-[44rem] object-cover"
         alt="Hero Background"
       />
-
-      {/* Text */}
 
       <motion.div
         initial={{ y: 50, opacity: 0 }}
@@ -101,6 +106,7 @@ const HeroPage = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             className="bg-red-700 font-bold uppercase px-4 py-2 tracking-widest"
+            onClick={openModal}
           >
             Activate Coupon
           </motion.button>
@@ -119,6 +125,7 @@ const HeroPage = () => {
           <img src="/company-4.png" />
         </div>
       </motion.div>
+      <AvailModal isOpen={isModalOpen} onClose={closeModal} />  
       <style jsx>{`
         @keyframes glow-blue {
           0% {
