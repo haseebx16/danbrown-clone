@@ -11,10 +11,10 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
 
-    - name: Use Node.js 22
+    - name: Use Node.js 20
       uses: actions/setup-node@v3
       with:
-        node-version: '22'
+        node-version: '20'  # Node 22 is unstable; use 20 instead
       
     - name: 🔨 Build Project
       run: |
@@ -25,8 +25,10 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_HOST }}
-        local-dir: ./out/
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./out/  # Change if using SSR
         server-dir: /
-        passive: true
+        protocol: ftps  # More stable than FTP
+        timeout: 60000   # Increase timeout to prevent disconnects
+        log-level: verbose
