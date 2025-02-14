@@ -32,3 +32,4 @@ jobs:
         protocol: ftps  # More stable than FTP
         timeout: 60000   # Increase timeout to prevent disconnects
         log-level: verbose
+        concurrency: 3
